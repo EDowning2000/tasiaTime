@@ -2,7 +2,5 @@
   height: 80vh;
   width: 30rem;
   background-color: green;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
 }
