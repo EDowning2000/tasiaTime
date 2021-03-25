@@ -2,5 +2,16 @@
   height: 80vh;
   width: 30rem;
   background-color: green;
+  display: flex;
   margin: auto;
+}
+.lightGreen {
+  height: 100%;
+  width: 2rem;
+  background-color: rgb(179, 215, 206);
+}
+.darkGreen {
+  height: 100%;
+  width: 2rem;
+  background-color: rgb(114, 149, 136);
 }
