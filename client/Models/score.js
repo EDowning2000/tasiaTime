@@ -13,12 +13,6 @@ const ScoreSchema = new mongoose.Schema({
     trim: true,
     maxLength: 25,
   },
-  relativeToPar: {
-    type: String,
-    required: true,
-    trim: true,
-    maxLength: 10,
-  },
   holeOne: {},
   holeTwo: {},
   holeThree: {},
@@ -37,6 +31,30 @@ const ScoreSchema = new mongoose.Schema({
   holeSixteen: {},
   holeSeventeen: {},
   holeEighteen: {},
+  relativeToPar: {
+    type: String,
+    required: true,
+    trim: true,
+    maxLength: 10,
+  },
+  finalScore: {
+    type: String,
+    required: true,
+    trim: true,
+    maxLength: 10,
+  },
+  frontNine: {
+    type: String,
+    required: true,
+    trim: true,
+    maxLength: 10,
+  },
+  backNine: {
+    type: String,
+    required: true,
+    trim: true,
+    maxLength: 10,
+  },
 });
 
 export default mongoose.models.Score || mongoose.model("Score", ScoreSchema);
