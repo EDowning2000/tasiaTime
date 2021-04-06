@@ -1,4 +1,5 @@
 import styles from "../styles/Rules.module.css";
+import golfBall from "../images/golfBall.png";
 
 export default function Rules() {
   return (
@@ -31,6 +32,7 @@ export default function Rules() {
             FROM CLIMBING ON THE SHOW PROPS.
           </h6>
         </div>
+        <img src={golfBall} />
       </div>
     </div>
   );
