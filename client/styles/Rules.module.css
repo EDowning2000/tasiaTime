@@ -9,6 +9,13 @@
   width: 30rem;
   background-color: rgb(251, 250, 241);
 }
+.rulesOfPlay {
+  color: rgb(255, 132, 94);
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  font-family: "Copperplate";
+}
 /* white */
 /* background-color: rgb(251, 250, 241); */
 
