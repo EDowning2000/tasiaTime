@@ -43,6 +43,11 @@ export default function Rules() {
             <img src={golfBall} className={styles.golfBallPicture} />
           </div>
         </div>
+        <div className={styles.readyForMore}>
+          <h1 className={styles.readyForMoreTitle}>
+            READY FOR MORE MINIATURE GOLF?
+          </h1>
+        </div>
       </div>
     </div>
   );
