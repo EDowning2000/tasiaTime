@@ -47,6 +47,14 @@ export default function Rules() {
           <h1 className={styles.readyForMoreTitle}>
             READY FOR MORE MINIATURE GOLF?
           </h1>
+          <h6 className={styles.moreMiniGolfInfo}>
+            HAVE YOU EVER WONDERED WHERE SANTA GOES THE OTHER 364 DAYS OF THE
+            YEAR? YOU MAY WANT TO CHECK OUT DISNEY'S WINTER SUMMERLAND MINIATURE
+            GOLF, SANTAS PERSONAL VACATION RETREAT. FROM ICE PALACES AND SAND
+            CASTLES TO A TRIP UP TO THE NORTH POLE, THESE COURSES WILL GIVE YOU
+            A CHILL. DISNEY'S WINTER SUMMERLAND MINIATURE GOLF IS LOCATED JUST
+            OUTSIDE THE GATES OF DISNEY'S BLIZZARD BEACH WATER PARK.{" "}
+          </h6>
         </div>
       </div>
     </div>
