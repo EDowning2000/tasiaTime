@@ -34,6 +34,26 @@
   font-weight: 400;
   margin-bottom: 1rem;
 }
+.golfBallImage {
+  width: 3rem;
+  padding: 0rem;
+}
+.mainPictureContainer {
+  display: flex;
+  justify-content: center;
+}
+.pictureContainer {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.golfBallPicture {
+  /* width: 12rem; */
+  height: 12rem;
+  padding: 0;
+}
 /* white 
 background-color: rgb(251, 250, 241); */
 

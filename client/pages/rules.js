@@ -32,7 +32,17 @@ export default function Rules() {
             FROM CLIMBING ON THE SHOW PROPS.
           </h6>
         </div>
-        <img src={golfBall} />
+        <div className={styles.mainPictureContainer}>
+          <div className={styles.pictureContainer}>
+            <img src={golfBall} className={styles.golfBallPicture} />
+          </div>
+          <div className={styles.pictureContainer}>
+            <img src={golfBall} className={styles.golfBallPicture} />
+          </div>
+          <div className={styles.pictureContainer}>
+            <img src={golfBall} className={styles.golfBallPicture} />
+          </div>
+        </div>
       </div>
     </div>
   );
