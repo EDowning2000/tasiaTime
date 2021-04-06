@@ -17,8 +17,18 @@
   font-family: "Copperplate";
   font-weight: 400;
 }
-/* white */
-/* background-color: rgb(251, 250, 241); */
+.individualRulesContainer {
+}
+.individualRule {
+  color: rgb(5, 89, 5);
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+/* white 
+background-color: rgb(251, 250, 241); */
 
-/* red */
-/* border: 1px solid rgb(255, 132, 94); */
+/* red 
+ border: 1px solid rgb(255, 132, 94); */
+
+/* mid green
+color: rgb(5, 89, 5); */
