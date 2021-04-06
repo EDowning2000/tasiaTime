@@ -8,6 +8,7 @@
   height: 70vh;
   width: 30rem;
   background-color: rgb(251, 250, 241);
+  border: 1px solid black;
 }
 .rulesOfPlay {
   color: rgb(255, 132, 94);
@@ -18,11 +19,20 @@
   font-weight: 400;
 }
 .individualRulesContainer {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .individualRule {
   color: rgb(5, 89, 5);
-  margin-top: 0.5rem;
-  margin-left: 1rem;
+  font-family: "Copperplate";
+  font-weight: 600;
+}
+.individualRuleInfo {
+  color: rgb(5, 89, 5);
+  font-family: "Copperplate";
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
 /* white 
 background-color: rgb(251, 250, 241); */
