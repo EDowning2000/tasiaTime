@@ -1,13 +1,7 @@
-/* BOTH FONT FAMILIES */
-/* font-family: 'Abril Fatface', cursive; */
-/* font-family: 'Oswald', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald:wght@200;300;400;500;600;700&display=swap");
-
 @font-face {
   src: url(../fonts/Copperplate.ttf);
-  src: url();
+  src: url(../fonts/Garamond.otf);
 }
-
 * {
   margin: 0;
   padding: 0;

@@ -4,7 +4,7 @@ export default function Rules() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.firstContainer}>
-        <h3 className={styles.rulesOfPlay}>RULES OF PLAY</h3>
+        <h1 className={styles.rulesOfPlay}>RULES OF PLAY</h1>
       </div>
     </div>
   );
