@@ -22,8 +22,8 @@ export default function Table() {
           <td></td>
         </tr>
         <tr>
-          <th></th>
-          <th></th>
+          <th>1</th>
+          <th>4</th>
           <td></td>
           <td></td>
           <td></td>
@@ -31,8 +31,8 @@ export default function Table() {
           <td></td>
         </tr>
         <tr>
-          <th></th>
-          <th></th>
+          <th>2</th>
+          <th>4</th>
           <td></td>
           <td></td>
           <td></td>
@@ -40,8 +40,8 @@ export default function Table() {
           <td></td>
         </tr>
         <tr>
-          <th></th>
-          <th></th>
+          <th>3</th>
+          <th>4</th>
           <td></td>
           <td></td>
           <td></td>
@@ -49,8 +49,8 @@ export default function Table() {
           <td></td>
         </tr>
         <tr>
-          <th></th>
-          <th></th>
+          <th>4</th>
+          <th>4</th>
           <td></td>
           <td></td>
           <td></td>
@@ -58,8 +58,8 @@ export default function Table() {
           <td></td>
         </tr>
         <tr>
-          <th></th>
-          <th></th>
+          <th>5</th>
+          <th>4</th>
           <td></td>
           <td></td>
           <td></td>
@@ -67,8 +67,8 @@ export default function Table() {
           <td></td>
         </tr>
         <tr>
-          <th></th>
-          <th></th>
+          <th>6</th>
+          <th>4</th>
           <td></td>
           <td></td>
           <td></td>
@@ -76,8 +76,8 @@ export default function Table() {
           <td></td>
         </tr>
         <tr>
-          <th></th>
-          <th></th>
+          <th>7</th>
+          <th>4</th>
           <td></td>
           <td></td>
           <td></td>
@@ -85,8 +85,8 @@ export default function Table() {
           <td></td>
         </tr>
         <tr>
-          <th></th>
-          <th></th>
+          <th>8</th>
+          <th>4</th>
           <td></td>
           <td></td>
           <td></td>
@@ -94,8 +94,8 @@ export default function Table() {
           <td></td>
         </tr>
         <tr>
-          <th></th>
-          <th></th>
+          <th>9</th>
+          <th>4</th>
           <td></td>
           <td></td>
           <td></td>
@@ -103,8 +103,8 @@ export default function Table() {
           <td></td>
         </tr>
         <tr>
-          <th></th>
-          <th></th>
+          <th>10</th>
+          <th>4</th>
           <td></td>
           <td></td>
           <td></td>
@@ -112,8 +112,8 @@ export default function Table() {
           <td></td>
         </tr>
         <tr>
-          <th></th>
-          <th></th>
+          <th>11</th>
+          <th>4</th>
           <td></td>
           <td></td>
           <td></td>
@@ -121,8 +121,8 @@ export default function Table() {
           <td></td>
         </tr>
         <tr>
-          <th></th>
-          <th></th>
+          <th>12</th>
+          <th>4</th>
           <td></td>
           <td></td>
           <td></td>
@@ -130,8 +130,8 @@ export default function Table() {
           <td></td>
         </tr>
         <tr>
-          <th></th>
-          <th></th>
+          <th>13</th>
+          <th>4</th>
           <td></td>
           <td></td>
           <td></td>
@@ -139,8 +139,8 @@ export default function Table() {
           <td></td>
         </tr>
         <tr>
-          <th></th>
-          <th></th>
+          <th>14</th>
+          <th>4</th>
           <td></td>
           <td></td>
           <td></td>
@@ -148,8 +148,8 @@ export default function Table() {
           <td></td>
         </tr>
         <tr>
-          <th></th>
-          <th></th>
+          <th>15</th>
+          <th>4</th>
           <td></td>
           <td></td>
           <td></td>
@@ -157,8 +157,8 @@ export default function Table() {
           <td></td>
         </tr>
         <tr>
-          <th></th>
-          <th></th>
+          <th>16</th>
+          <th>4</th>
           <td></td>
           <td></td>
           <td></td>
@@ -166,8 +166,8 @@ export default function Table() {
           <td></td>
         </tr>
         <tr>
-          <th></th>
-          <th></th>
+          <th>17</th>
+          <th>4</th>
           <td></td>
           <td></td>
           <td></td>
@@ -175,8 +175,8 @@ export default function Table() {
           <td></td>
         </tr>
         <tr>
-          <th></th>
-          <th></th>
+          <th>18</th>
+          <th>4</th>
           <td></td>
           <td></td>
           <td></td>
