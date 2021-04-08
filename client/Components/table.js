@@ -19,15 +19,17 @@ export default function Table() {
           <th className={styles.headerPar}>Par</th>
           <td className={styles.dataTwo}></td>
         </tr>
-        {/* <tr>
-          <th>1</th>
-          <th>4</th>
-          <td>a</td>
-          <td>a</td>
-          <td>a</td>
-          <td>a</td>
-          <td>a</td>
-        </tr> */}
+      </table>
+      <table className={styles.secondaryTable}>
+        <tr>
+          <th className={styles.holeNumber}>1</th>
+          <th className={styles.holePar}>4</th>
+          <td className={styles.dataThree}>a</td>
+          <td className={styles.dataThree}>a</td>
+          <td className={styles.dataThree}>a</td>
+          <td className={styles.dataThree}>a</td>
+          <td className={styles.dataThree}>a</td>
+        </tr>
         {/* <tr>
           <th>2</th>
           <th>4</th>

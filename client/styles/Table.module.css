@@ -41,6 +41,30 @@
   width: 24.7rem;
   background-color: rgb(5, 89, 5);
 }
+.holeNumber {
+  width: 2.39rem !important;
+  height: 1.5rem;
+  font-family: "Copperplate";
+  font-weight: 400;
+  color: rgb(5, 89, 5);
+  border: 2px solid rgb(5, 89, 5);
+}
+.holePar {
+  width: 2.39rem !important;
+  height: 1.5rem;
+  font-family: "Copperplate";
+  font-weight: 400;
+  color: rgb(5, 89, 5);
+  border: 2px solid rgb(5, 89, 5);
+}
+.dataThree {
+  width: 4.85rem;
+  height: 1.5rem;
+  font-family: "Copperplate";
+  font-weight: 200;
+  border: 2px solid rgb(5, 89, 5);
+  text-align: center;
+}
 /* .headerHole {
   width: 2.5rem;
   height: 1.5rem;
