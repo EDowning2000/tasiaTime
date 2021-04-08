@@ -6,16 +6,18 @@ export default function Table() {
       <table className={styles.mainTable}>
         <tr className={styles.rowOne}>
           <th className={styles.headerOne}>NAMES</th>
-          <td className={styles.dataOne}></td>
-          <td className={styles.dataOne}>a</td>
-          <td className={styles.dataOne}>a</td>
-          <td className={styles.dataOne}>a</td>
-          <td className={styles.dataOne}>a</td>
+          <td className={styles.dataOne}>filler</td>
+          <td className={styles.dataOne}>filler</td>
+          <td className={styles.dataOne}>filler</td>
+          <td className={styles.dataOne}>filler</td>
+          <td className={styles.dataOne}>filler</td>
         </tr>
+      </table>
+      <table>
         <tr>
-          <th className={styles.headerHole}>Hole{"  "} Par</th>
-          {/* <th className={styles.headerPar}>Par</th> */}
-          <td className={styles.dataTwo}>a</td>
+          <th className={styles.headerHole}>Hole</th>
+          <th className={styles.headerPar}>Par</th>
+          <td className={styles.dataTwo}></td>
         </tr>
         {/* <tr>
           <th>1</th>
