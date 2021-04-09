@@ -9,8 +9,8 @@ function MyApp({ Component, pageProps }) {
         <title>Fantasia Gardens Mini Golf</title>
         <meta charSet="utf-8" />
       </Head>
-      <Component {...pageProps} />
-      {/* <Table /> */}
+      {/* <Component {...pageProps} /> */}
+      <Table />
     </>
   );
 }
