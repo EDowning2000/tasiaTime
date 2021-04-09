@@ -1,0 +1,12 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firstContainer {
+  margin: 5rem;
+  height: 70vh;
+  width: 30rem;
+  background-color: rgb(251, 250, 241);
+  border: 1px solid black;
+}
