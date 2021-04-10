@@ -10,3 +10,37 @@
   background-color: rgb(251, 250, 241);
   border: 1px solid black;
 }
+.gardensHeader {
+  text-align: center;
+  justify-items: center;
+  margin-top: 1.2rem;
+  color: rgb(255, 132, 94);
+  font-family: "Copperplate";
+  font-weight: 400;
+}
+.gardensSubHeader {
+  text-align: center;
+  justify-items: center;
+  margin-top: 0.5rem;
+  color: rgb(255, 132, 94);
+  font-family: "Garamond";
+  font-style: italic;
+  font-weight: 200;
+}
+.mainPictureContainer {
+  display: flex;
+  justify-content: center;
+}
+.pictureContainer {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  margin: -1rem;
+  align-items: center;
+  justify-content: center;
+}
+.golfBallPicture {
+  /* width: 12rem; */
+  height: 1rem;
+  padding: 0;
+}
