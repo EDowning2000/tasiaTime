@@ -40,6 +40,7 @@
   justify-content: center;
 }
 .golfBallPicture {
+  margin-top: -1rem;
   /* width: 12rem; */
   height: 1rem;
   padding: 0;
@@ -47,4 +48,5 @@
 .secondContainer {
   width: 90%;
   margin: auto;
+  margin-top: -1rem;
 }
