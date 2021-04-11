@@ -21,9 +21,10 @@ export default function Fairways() {
             <img src={golfBall} className={styles.golfBallPicture} />
           </div>
         </div>
-        <Table />
+        <div className={styles.secondContainer}>
+          <Table />
+        </div>
       </div>
-      {/* <Table /> */}
     </div>
   );
 }

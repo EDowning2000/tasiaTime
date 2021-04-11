@@ -44,3 +44,7 @@
   height: 1rem;
   padding: 0;
 }
+.secondContainer {
+  width: 90%;
+  margin: auto;
+}
