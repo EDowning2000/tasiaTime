@@ -1,5 +1,6 @@
 import styles from "../styles/Fairways.module.css";
 import golfBall from "../Images/golfBall.png";
+import Table from "../Components/table";
 
 export default function Fairways() {
   return (
@@ -20,7 +21,9 @@ export default function Fairways() {
             <img src={golfBall} className={styles.golfBallPicture} />
           </div>
         </div>
+        <Table />
       </div>
+      {/* <Table /> */}
     </div>
   );
 }
