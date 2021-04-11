@@ -1,5 +1,6 @@
 import styles from "../styles/Gardens.module.css";
 import golfBall from "../Images/golfBall.png";
+import Table from "../Components/table";
 
 export default function Gardens() {
   return (
@@ -17,6 +18,9 @@ export default function Gardens() {
           <div className={styles.pictureContainer}>
             <img src={golfBall} className={styles.golfBallPicture} />
           </div>
+        </div>
+        <div className={styles.secondContainer}>
+          <Table />
         </div>
       </div>
     </div>
