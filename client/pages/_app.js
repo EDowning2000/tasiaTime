@@ -1,7 +1,6 @@
 import "../styles/globals.css";
 import Head from "next/head";
-import Table from "../Components/table";
-
+import Button from "../Components/button";
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -10,7 +9,7 @@ function MyApp({ Component, pageProps }) {
         <meta charSet="utf-8" />
       </Head>
       <Component {...pageProps} />
-      {/* <Table /> */}
+      <Button />
     </>
   );
 }
