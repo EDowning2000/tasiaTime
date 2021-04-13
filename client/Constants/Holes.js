@@ -1,4 +1,4 @@
-export const HOLES = [
+const HOLES = [
   { GARDENS_1: 3 },
   { GARDENS_2: 3 },
   { GARDENS_3: 3 },
@@ -38,3 +38,4 @@ export const HOLES = [
   { FAIRWAYS_18: 4 },
   { FAIRWAYS_TOTAL: 72 },
 ];
+export default HOLES;

@@ -1,6 +1,7 @@
 import styles from "../styles/Fairways.module.css";
 import golfBall from "../Images/golfBall.png";
 import Table from "../Components/table";
+import HOLES from "../Constants/Holes";
 
 export default function Fairways() {
   return (
