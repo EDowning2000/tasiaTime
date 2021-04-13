@@ -43,7 +43,9 @@ export default function Table({
       <table className={styles.secondaryTable}>
         <tr>
           <th className={styles.holeNumber}>1</th>
-          <th className={styles.holePar}>{HOLE1}</th>
+          <th className={styles.holePar}>
+            <div className={styles.circle}>{HOLE1}</div>
+          </th>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
@@ -52,7 +54,9 @@ export default function Table({
         </tr>
         <tr>
           <th className={styles.holeNumber}>2</th>
-          <th className={styles.holePar}>{HOLE2}</th>
+          <th className={styles.holePar}>
+            <div className={styles.circle}>{HOLE2}</div>
+          </th>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
@@ -61,7 +65,9 @@ export default function Table({
         </tr>
         <tr>
           <th className={styles.holeNumber}>3</th>
-          <th className={styles.holePar}>{HOLE3}</th>
+          <th className={styles.holePar}>
+            <div className={styles.circle}>{HOLE3}</div>
+          </th>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
@@ -70,7 +76,9 @@ export default function Table({
         </tr>
         <tr>
           <th className={styles.holeNumber}>4</th>
-          <th className={styles.holePar}>{HOLE4}</th>
+          <th className={styles.holePar}>
+            <div className={styles.circle}>{HOLE4}</div>
+          </th>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
@@ -79,7 +87,9 @@ export default function Table({
         </tr>
         <tr>
           <th className={styles.holeNumber}>5</th>
-          <th className={styles.holePar}>{HOLE5}</th>
+          <th className={styles.holePar}>
+            <div className={styles.circle}>{HOLE5}</div>
+          </th>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
@@ -88,7 +98,9 @@ export default function Table({
         </tr>
         <tr>
           <th className={styles.holeNumber}>6</th>
-          <th className={styles.holePar}>{HOLE6}</th>
+          <th className={styles.holePar}>
+            <div className={styles.circle}>{HOLE6}</div>
+          </th>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
@@ -97,7 +109,9 @@ export default function Table({
         </tr>
         <tr>
           <th className={styles.holeNumber}>7</th>
-          <th className={styles.holePar}>{HOLE7}</th>
+          <th className={styles.holePar}>
+            <div className={styles.circle}>{HOLE7}</div>
+          </th>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
@@ -106,7 +120,9 @@ export default function Table({
         </tr>
         <tr>
           <th className={styles.holeNumber}>8</th>
-          <th className={styles.holePar}>{HOLE8}</th>
+          <th className={styles.holePar}>
+            <div className={styles.circle}>{HOLE8}</div>
+          </th>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
@@ -115,7 +131,9 @@ export default function Table({
         </tr>
         <tr>
           <th className={styles.holeNumber}>9</th>
-          <th className={styles.holePar}>{HOLE9}</th>
+          <th className={styles.holePar}>
+            <div className={styles.circle}>{HOLE9}</div>
+          </th>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
@@ -124,7 +142,9 @@ export default function Table({
         </tr>
         <tr>
           <th className={styles.holeNumber}>10</th>
-          <th className={styles.holePar}>{HOLE10}</th>
+          <th className={styles.holePar}>
+            <div className={styles.circle}>{HOLE10}</div>
+          </th>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
@@ -133,7 +153,9 @@ export default function Table({
         </tr>
         <tr>
           <th className={styles.holeNumber}>11</th>
-          <th className={styles.holePar}>{HOLE11}</th>
+          <th className={styles.holePar}>
+            <div className={styles.circle}>{HOLE11}</div>
+          </th>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
@@ -142,7 +164,9 @@ export default function Table({
         </tr>
         <tr>
           <th className={styles.holeNumber}>12</th>
-          <th className={styles.holePar}>{HOLE12}</th>
+          <th className={styles.holePar}>
+            <div className={styles.circle}>{HOLE12}</div>
+          </th>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
@@ -151,7 +175,9 @@ export default function Table({
         </tr>
         <tr>
           <th className={styles.holeNumber}>13</th>
-          <th className={styles.holePar}>{HOLE13}</th>
+          <th className={styles.holePar}>
+            <div className={styles.circle}>{HOLE13}</div>
+          </th>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
@@ -160,7 +186,9 @@ export default function Table({
         </tr>
         <tr>
           <th className={styles.holeNumber}>14</th>
-          <th className={styles.holePar}>{HOLE14}</th>
+          <th className={styles.holePar}>
+            <div className={styles.circle}>{HOLE14}</div>
+          </th>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
@@ -169,7 +197,9 @@ export default function Table({
         </tr>
         <tr>
           <th className={styles.holeNumber}>15</th>
-          <th className={styles.holePar}>{HOLE15}</th>
+          <th className={styles.holePar}>
+            <div className={styles.circle}>{HOLE15}</div>
+          </th>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
@@ -178,7 +208,9 @@ export default function Table({
         </tr>
         <tr>
           <th className={styles.holeNumber}>16</th>
-          <th className={styles.holePar}>{HOLE16}</th>
+          <th className={styles.holePar}>
+            <div className={styles.circle}>{HOLE16}</div>
+          </th>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
@@ -187,7 +219,9 @@ export default function Table({
         </tr>
         <tr>
           <th className={styles.holeNumber}>17</th>
-          <th className={styles.holePar}>{HOLE17}</th>
+          <th className={styles.holePar}>
+            <div className={styles.circle}>{HOLE17}</div>
+          </th>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
@@ -196,7 +230,9 @@ export default function Table({
         </tr>
         <tr>
           <th className={styles.holeNumber}>18</th>
-          <th className={styles.holePar}>{HOLE18}</th>
+          <th className={styles.holePar}>
+            <div className={styles.circle}>{HOLE18}</div>
+          </th>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
           <td className={styles.dataThree}>a</td>
