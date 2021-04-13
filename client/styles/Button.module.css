@@ -2,9 +2,12 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  height: 2.5rem;
-  width: 4rem;
-  border: 1px solid black;
+  margin-top: -2rem;
 }
 .secondaryContainer {
+  text-align: center;
+  padding-top: 0.9rem;
+  height: 2.5rem;
+  width: 10rem;
+  border: 1px solid black;
 }
