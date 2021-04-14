@@ -20,7 +20,7 @@ export default function Button({
           <span className={styles.arrowBack}></span>
           <div className={styles.secondaryContainer}>
             <div className={styles.stripeContainer}>
-              <h3 className={styles.buttonText}>{text}</h3>
+              <h1 className={styles.buttonText}>{text}</h1>
               <div className={styles.lightGreenStripeFirst}></div>
               <div className={styles.darkGreenStripe}></div>
               <div className={styles.lightGreenStripe}></div>
@@ -52,7 +52,7 @@ export default function Button({
           </Link>
           <div className={styles.secondaryContainer}>
             <div className={styles.stripeContainer}>
-              <h3>{text}</h3>
+              <h1 className={styles.buttonText}>{text}</h1>
               <div className={styles.lightGreenStripeFirst}></div>
               <div className={styles.darkGreenStripe}></div>
               <div className={styles.lightGreenStripe}></div>
