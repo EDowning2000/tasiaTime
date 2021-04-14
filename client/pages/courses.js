@@ -4,7 +4,7 @@ export default function Courses() {
   return (
     <>
       <h1>hello world</h1>
-      <Button routePrevious="/" routeNext="/rules" previousHidden={""} />
+      <Button routePrevious="/" routeNext="/rules" text="Course Descriptions" />
     </>
   );
 }

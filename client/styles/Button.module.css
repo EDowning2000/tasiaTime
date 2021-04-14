@@ -50,6 +50,7 @@
 }
 .buttonText {
   position: absolute;
+  max-width: 9.5rem;
   /* color: rgb(255, 132, 94); */
   /* color: rgb(251, 250, 241); */
   color: black;

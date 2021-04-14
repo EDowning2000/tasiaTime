@@ -1,6 +1,6 @@
 import styles from "../styles/Index.module.css";
 import mainLogo from "../Images/FantasiaGardens.png";
-import Button from "../Components/button";
+import ButtonForwardOnly from "../Components/buttonForwardOnly";
 export default function Index() {
   return (
     <>
@@ -34,7 +34,7 @@ export default function Index() {
         </div>
       </div>
       <div className={styles.buttonContainer}>
-        <Button text="Start!" routeNext="/courses" routePrevious="/" />
+        <ButtonForwardOnly text="Start!" routeNext="/courses" />
       </div>
     </>
   );
