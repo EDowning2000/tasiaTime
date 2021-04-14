@@ -34,7 +34,7 @@ export default function Index() {
         </div>
       </div>
       <div className={styles.buttonContainer}>
-        <Button text="Start!" routeNext="/courses" previousHidden="true" />
+        <Button text="Start!" routeNext="/courses" routePrevious="/" />
       </div>
     </>
   );
