@@ -6,8 +6,34 @@
 }
 .secondaryContainer {
   text-align: center;
-  padding-top: 0.9rem;
   height: 2.5rem;
   width: 10rem;
-  border: 1px solid black;
+}
+.stripeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.lightGreenStripeFirst {
+  border-radius: 1rem 0rem 0rem 1rem;
+  height: 2.5rem;
+  width: 2rem;
+  background-color: rgb(179, 215, 206);
+}
+.lightGreenStripe {
+  height: 2.5rem;
+  width: 2rem;
+  background-color: rgb(179, 215, 206);
+}
+.darkGreenStripe {
+  height: 2.5rem;
+  width: 2rem;
+  background-color: rgb(114, 149, 136);
+}
+.lightGreenStripeLast {
+  border-radius: 0rem 1rem 1rem 0rem;
+  height: 2.5rem;
+  width: 2rem;
+  background-color: rgb(179, 215, 206);
 }

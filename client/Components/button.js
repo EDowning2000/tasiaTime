@@ -3,7 +3,13 @@ export default function Button() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.secondaryContainer}>
-        <h6>hello world</h6>
+        <div className={styles.stripeContainer}>
+          <div className={styles.lightGreenStripeFirst}></div>
+          <div className={styles.darkGreenStripe}></div>
+          <div className={styles.lightGreenStripe}></div>
+          <div className={styles.darkGreenStripe}></div>
+          <div className={styles.lightGreenStripeLast}></div>
+        </div>
       </div>
     </div>
   );
