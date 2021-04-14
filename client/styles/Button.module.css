@@ -16,7 +16,7 @@
   align-items: center;
 }
 .lightGreenStripeFirst {
-  border-radius: 1rem 0rem 0rem 1rem;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
   height: 2.5rem;
   width: 2rem;
   background-color: rgb(179, 215, 206);
@@ -32,7 +32,7 @@
   background-color: rgb(114, 149, 136);
 }
 .lightGreenStripeLast {
-  border-radius: 0rem 1rem 1rem 0rem;
+  border-radius: 0rem 0.8rem 0.8rem 0rem;
   height: 2.5rem;
   width: 2rem;
   background-color: rgb(179, 215, 206);
