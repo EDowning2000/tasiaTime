@@ -6,7 +6,7 @@ export default function Add() {
     <>
       <h1>hello</h1>
       <div className={styles.buttonContainer}>
-        <Button text="Add Players" routeNext="/hole1" routePrevious="/rules" />
+        <Button text="Add Players" routeNext="/hole" routePrevious="/rules" />
       </div>
     </>
   );
