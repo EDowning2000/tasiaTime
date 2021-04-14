@@ -9,7 +9,6 @@ function MyApp({ Component, pageProps }) {
         <meta charSet="utf-8" />
       </Head>
       <Component {...pageProps} />
-      <Button />
     </>
   );
 }

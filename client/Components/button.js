@@ -9,16 +9,18 @@ export default function Button({
   routeNext,
   previousHidden,
 }) {
-  let backHiden = { previousHidden };
+  let backHidden = { previousHidden };
 
   if (backHidden) {
     return (
       <>
         <div className={styles.mainContainer}>
           {" "}
+          {/* filler so things dont get offline when the back routing arrow isnt rendered */}
+          <span className={styles.arrowBack}></span>
           <div className={styles.secondaryContainer}>
             <div className={styles.stripeContainer}>
-              <h3>{text}</h3>
+              <h3 className={styles.buttonText}>{text}</h3>
               <div className={styles.lightGreenStripeFirst}></div>
               <div className={styles.darkGreenStripe}></div>
               <div className={styles.lightGreenStripe}></div>

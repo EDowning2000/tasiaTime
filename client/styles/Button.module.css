@@ -48,3 +48,10 @@
   width: 3rem;
   height: 2rem;
 }
+.buttonText {
+  position: absolute;
+  /* color: rgb(255, 132, 94); */
+  color: rgb(251, 250, 241);
+  font-family: "Copperplate";
+  font-weight: 700;
+}
