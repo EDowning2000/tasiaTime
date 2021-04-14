@@ -1,5 +1,5 @@
 import styles from "../styles/Button.module.css";
-import arrow from "../Images/arrow.png";
+import arrow from "../Images/routerArrow.png";
 export default function Button() {
   return (
     <>
