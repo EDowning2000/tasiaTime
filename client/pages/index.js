@@ -1,6 +1,6 @@
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Index.module.css";
 import mainLogo from "../Images/FantasiaGardens.png";
-export default function Home() {
+export default function Index() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.firstContainer}>

@@ -10,15 +10,13 @@ export default function Button({
   nextHidden,
   previousHidden,
 }) {
-  const routeBack = useState("");
-  const routeForward = useState("");
-  const back = useState("");
-  const forward = useState("");
+  let forwardHidden = { nextHidden };
+  let backHiden = { previousHidden };
   return (
     <>
       <div className={styles.mainContainer}>
         {" "}
-        <Link href={routePrevious}>
+        <Link href="/">
           <img
             src={arrow}
             alt="navigate forward"
@@ -35,7 +33,7 @@ export default function Button({
             <div className={styles.lightGreenStripeLast}></div>
           </div>
         </div>
-        <Link href={routeNext}>
+        <Link href="/">
           <img
             src={arrow}
             alt="navigate forward"
