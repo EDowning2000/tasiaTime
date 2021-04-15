@@ -1,6 +1,8 @@
 .mainContainer {
   display: flex;
   margin: 5rem;
+  display: flex;
+  justify-content: center;
 }
 .firstContainer {
   height: 70vh;
@@ -36,4 +38,52 @@
   margin-top: 0.13rem;
   border: 3px solid rgb(255, 132, 94);
   display: flex;
+}
+.courseInfoContainer {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.gardensHeader {
+  margin-top: 0.5rem;
+  color: rgb(255, 132, 94);
+  font-family: "Copperplate";
+  text-align: center;
+  font-weight: 400;
+}
+.fairwaysHeader {
+  margin-top: 0.5rem;
+  color: rgb(255, 132, 94);
+  font-family: "Copperplate";
+  text-align: center;
+  font-weight: 400;
+}
+.courseInfoContainer {
+  line-height: 20px;
+}
+.gardensInfo {
+  font-family: "Copperplate";
+  font-weight: 400;
+  color: rgb(5, 89, 5);
+}
+.fairwaysInfo {
+  font-family: "Copperplate";
+  font-weight: 400;
+  color: rgb(5, 89, 5);
+}
+.golfBallContainer {
+  display: flex;
+  justify-content: center;
+  /* margin-left: 1.5rem; */
+  margin-bottom: 1.5rem;
+}
+.golfBallPic {
+  height: 1rem;
+}
+.golfBallPicCenter {
+  height: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
