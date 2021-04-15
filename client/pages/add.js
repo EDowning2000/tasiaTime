@@ -4,9 +4,35 @@ import Button from "../Components/button";
 export default function Add() {
   return (
     <>
-      <h1>hello</h1>
+      <div className={styles.mainContainer}>
+        <div className={styles.firstContainer}>
+          <div className={styles.lightGreen}></div>
+          <div className={styles.darkGreen}></div>
+          <div className={styles.lightGreen}></div>
+          <div className={styles.darkGreen}></div>
+          <div className={styles.lightGreen}></div>
+          <div className={styles.darkGreen}></div>
+          <div className={styles.lightGreen}></div>
+          <div className={styles.darkGreen}></div>
+          <div className={styles.lightGreen}></div>
+          <div className={styles.darkGreen}></div>
+          <div className={styles.lightGreen}></div>
+          <div className={styles.darkGreen}></div>
+          <div className={styles.lightGreen}></div>
+          <div className={styles.darkGreen}></div>
+          <div className={styles.lightGreen}></div>
+          <div className={styles.darkGreen}></div>
+          <div className={styles.center}>
+            <div className={styles.center2}></div>
+          </div>
+        </div>
+      </div>
       <div className={styles.buttonContainer}>
-        <Button text="Add Players" routeNext="/hole" routePrevious="/rules" />
+        <Button
+          routePrevious="/"
+          routeNext="/rules"
+          text="Course Descriptions"
+        />
       </div>
     </>
   );
