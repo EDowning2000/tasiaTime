@@ -23,7 +23,12 @@ export default function Add() {
           <div className={styles.lightGreen}></div>
           <div className={styles.darkGreen}></div>
           <div className={styles.center}>
-            <div className={styles.center2}></div>
+            <div className={styles.center2}>
+              <h3 className={styles.coursePickerHeader}>
+                WHICH COURSE ARE YOU PLAYING
+              </h3>
+              <h3 className={styles.playerCountHeader}>HOW MANY PLAYERS</h3>
+            </div>
           </div>
         </div>
       </div>
