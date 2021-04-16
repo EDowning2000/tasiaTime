@@ -184,13 +184,22 @@ export default function Add() {
           </div>
         </div>
       </div>
-      <div className={styles.buttonContainer}>
+      {renderPlayersInput == "true" && (
+        <div className={styles.buttonContainer}>
+          <ButtonNav
+            routePrevious="/"
+            routeNext="/rules"
+            text="Course Descriptions"
+          />
+        </div>
+      )}
+      {/* <div className={styles.buttonContainer}>
         <ButtonNav
           routePrevious="/"
           routeNext="/rules"
           text="Course Descriptions"
         />
-      </div>
+      </div> */}
     </>
   );
 }
