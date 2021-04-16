@@ -41,7 +41,7 @@
   flex-direction: column;
 }
 .coursePickerHeader {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   text-align: center;
   color: rgb(255, 132, 94);
   font-family: "Copperplate";
@@ -54,6 +54,23 @@
   font-family: "Copperplate";
   font-weight: 400;
 }
+.courseDropdownContainer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
 .courseDropdown {
-  font-family: "Copperplate";
+  color: rgb(255, 132, 94) !important;
+  background-color: rgb(179, 215, 206) !important;
+}
+.playerDropdownContainer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.playerDropdown {
+  color: rgb(255, 132, 94) !important;
+  background-color: rgb(179, 215, 206) !important;
 }

@@ -6,8 +6,8 @@ import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 
 export default function Add() {
-  const [fairways, setFairways] = useState(false);
-  const [gardens, setGardens] = useState(false);
+  const [course, setCourse] = useState("");
+  const [players, setPlayers] = useState();
 
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -16,12 +16,12 @@ export default function Add() {
   };
 
   const closeFairways = () => {
-    setFairways(true);
+    setCourse("Fairways");
     handleClose();
   };
 
   const closeGardens = () => {
-    setGardens(true);
+    setCourse("Gardens");
     handleClose();
   };
 
@@ -54,25 +54,50 @@ export default function Add() {
               <h3 className={styles.coursePickerHeader}>
                 WHICH COURSE ARE YOU PLAYING
               </h3>
-
-              <Button
-                aria-controls="simple-menu"
-                aria-haspopup="true"
-                onClick={handleClick}
-              >
-                Choose A Course
-              </Button>
-              <Menu
-                id="simple-menu"
-                anchorEl={anchorEl}
-                keepMounted
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
-              >
-                <MenuItem onClick={closeFairways}>The Fairways</MenuItem>
-                <MenuItem onClick={closeGardens}>The Gardens</MenuItem>
-              </Menu>
+              <div className={styles.courseDropdownContainer}>
+                <Button
+                  className={styles.courseDropdown}
+                  aria-controls="simple-menu"
+                  aria-haspopup="true"
+                  onClick={handleClick}
+                >
+                  Choose A Course
+                </Button>
+                <Menu
+                  id="simple-menu"
+                  anchorEl={anchorEl}
+                  keepMounted
+                  open={Boolean(anchorEl)}
+                  onClose={handleClose}
+                >
+                  <MenuItem onClick={closeFairways}>The Fairways</MenuItem>
+                  <MenuItem onClick={closeGardens}>The Gardens</MenuItem>
+                </Menu>
+              </div>
               <h3 className={styles.playerCountHeader}>HOW MANY PLAYERS</h3>
+              <div className={styles.playerDropdownContainer}>
+                <Button
+                  className={styles.playerDropdown}
+                  aria-controls="simple-menu"
+                  aria-haspopup="true"
+                  onClick={handleClick}
+                >
+                  Choose A Course
+                </Button>
+                <Menu
+                  id="simple-menu"
+                  anchorEl={anchorEl}
+                  keepMounted
+                  open={Boolean(anchorEl)}
+                  onClose={handleClose}
+                >
+                  <MenuItem onClick={closeFairways}>1 Player</MenuItem>
+                  <MenuItem onClick={closeGardens}>2 Players</MenuItem>
+                  <MenuItem onClick={closeFairways}>3 Players</MenuItem>
+                  <MenuItem onClick={closeFairways}>4 Players</MenuItem>
+                  <MenuItem onClick={closeFairways}>5 Players</MenuItem>
+                </Menu>
+              </div>
             </div>
           </div>
         </div>
