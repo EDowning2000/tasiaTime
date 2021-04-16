@@ -11,7 +11,11 @@ export default function Add() {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
 
-  const handleClick = event => {
+  const handleClickCourses = event => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClickPlayers = event => {
     setAnchorEl(event.currentTarget);
   };
 
@@ -22,6 +26,27 @@ export default function Add() {
 
   const closeGardens = () => {
     setCourse("Gardens");
+    handleClose();
+  };
+
+  const closeOne = () => {
+    setPlayers(1);
+    handleClose();
+  };
+  const closeTwo = () => {
+    setPlayers(2);
+    handleClose();
+  };
+  const closeThree = () => {
+    setPlayers(3);
+    handleClose();
+  };
+  const closeFour = () => {
+    setPlayers(4);
+    handleClose();
+  };
+  const closeFive = () => {
+    setPlayers(5);
     handleClose();
   };
 
@@ -59,7 +84,7 @@ export default function Add() {
                   className={styles.courseDropdown}
                   aria-controls="simple-menu"
                   aria-haspopup="true"
-                  onClick={handleClick}
+                  onClick={handleClickCourses}
                 >
                   Choose A Course
                 </Button>
@@ -80,7 +105,7 @@ export default function Add() {
                   className={styles.playerDropdown}
                   aria-controls="simple-menu"
                   aria-haspopup="true"
-                  onClick={handleClick}
+                  onClick={handleClickPlayers}
                 >
                   Choose A Course
                 </Button>
@@ -91,11 +116,11 @@ export default function Add() {
                   open={Boolean(anchorEl)}
                   onClose={handleClose}
                 >
-                  <MenuItem onClick={closeFairways}>1 Player</MenuItem>
-                  <MenuItem onClick={closeGardens}>2 Players</MenuItem>
-                  <MenuItem onClick={closeFairways}>3 Players</MenuItem>
-                  <MenuItem onClick={closeFairways}>4 Players</MenuItem>
-                  <MenuItem onClick={closeFairways}>5 Players</MenuItem>
+                  <MenuItem onClick={closeOne}>1 Player</MenuItem>
+                  <MenuItem onClick={closeTwo}>2 Players</MenuItem>
+                  <MenuItem onClick={closeThree}>3 Players</MenuItem>
+                  <MenuItem onClick={closeFour}>4 Players</MenuItem>
+                  <MenuItem onClick={closeFive}>5 Players</MenuItem>
                 </Menu>
               </div>
             </div>
