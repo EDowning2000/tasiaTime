@@ -131,6 +131,7 @@ export default function Add() {
                   </div>
                 </>
               )}
+              {/* need to conditonally render the player names now */}
             </div>
           </div>
         </div>
