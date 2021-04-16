@@ -7,7 +7,12 @@ import MenuItem from "@material-ui/core/MenuItem";
 
 export default function Add() {
   const [course, setCourse] = useState("");
-  const [players, setPlayers] = useState();
+  const [players, setPlayers] = useState("");
+  let playerNames = [];
+
+  const [renderCourse, setRenderCourse] = useState("true");
+  const [renderPlayers, setRenderPlayers] = useState("false");
+  const [renderPlayersInput, setRenderPlayersInput] = useState("false");
 
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -21,32 +26,46 @@ export default function Add() {
 
   const closeFairways = () => {
     setCourse("Fairways");
+    setRenderCourse("false");
+    setRenderPlayers("true");
     handleClose();
   };
 
   const closeGardens = () => {
     setCourse("Gardens");
+    setRenderCourse("false");
+    setRenderPlayers("true");
     handleClose();
   };
 
   const closeOne = () => {
-    setPlayers(1);
+    setPlayers("1");
+    setRenderPlayers("false");
+    setRenderPlayersInput("true");
     handleClose();
   };
   const closeTwo = () => {
-    setPlayers(2);
+    setPlayers("2");
+    setRenderPlayers("false");
+    setRenderPlayersInput("true");
     handleClose();
   };
   const closeThree = () => {
-    setPlayers(3);
+    setPlayers("3");
+    setRenderPlayers("false");
+    setRenderPlayersInput("true");
     handleClose();
   };
   const closeFour = () => {
-    setPlayers(4);
+    setPlayers("4");
+    setRenderPlayers("false");
+    setRenderPlayersInput("true");
     handleClose();
   };
   const closeFive = () => {
-    setPlayers(5);
+    setPlayers("5");
+    setRenderPlayers("false");
+    setRenderPlayersInput("true");
     handleClose();
   };
 
@@ -76,7 +95,7 @@ export default function Add() {
           <div className={styles.darkGreen}></div>
           <div className={styles.center}>
             <div className={styles.center2}>
-              {course == "" && (
+              {renderCourse == "true" && (
                 <>
                   <h3 className={styles.coursePickerHeader}>
                     WHICH COURSE ARE YOU PLAYING
@@ -91,19 +110,30 @@ export default function Add() {
                       Choose A Course
                     </Button>
                     <Menu
+                      className={styles.menu}
                       id="simple-menu"
                       anchorEl={anchorEl}
                       keepMounted
                       open={Boolean(anchorEl)}
                       onClose={handleClose}
                     >
-                      <MenuItem onClick={closeFairways}>The Fairways</MenuItem>
-                      <MenuItem onClick={closeGardens}>The Gardens</MenuItem>
+                      <MenuItem
+                        className={styles.menuItem}
+                        onClick={closeFairways}
+                      >
+                        The Fairways
+                      </MenuItem>
+                      <MenuItem
+                        className={styles.menuItem}
+                        onClick={closeGardens}
+                      >
+                        The Gardens
+                      </MenuItem>
                     </Menu>
                   </div>{" "}
                 </>
               )}{" "}
-              {course !== "" && (
+              {renderPlayers == "true" && (
                 <>
                   <h3 className={styles.playerCountHeader}>HOW MANY PLAYERS</h3>
                   <div className={styles.playerDropdownContainer}>
@@ -113,7 +143,7 @@ export default function Add() {
                       aria-haspopup="true"
                       onClick={handleClickPlayers}
                     >
-                      Choose A Course
+                      Choose Player Count
                     </Button>
                     <Menu
                       id="simple-menu"
@@ -122,13 +152,31 @@ export default function Add() {
                       open={Boolean(anchorEl)}
                       onClose={handleClose}
                     >
-                      <MenuItem onClick={closeOne}>1 Player</MenuItem>
-                      <MenuItem onClick={closeTwo}>2 Players</MenuItem>
-                      <MenuItem onClick={closeThree}>3 Players</MenuItem>
-                      <MenuItem onClick={closeFour}>4 Players</MenuItem>
-                      <MenuItem onClick={closeFive}>5 Players</MenuItem>
+                      <MenuItem className={styles.menuItem} onClick={closeOne}>
+                        1 Player
+                      </MenuItem>
+                      <MenuItem className={styles.menuItem} onClick={closeTwo}>
+                        2 Players
+                      </MenuItem>
+                      <MenuItem
+                        className={styles.menuItem}
+                        onClick={closeThree}
+                      >
+                        3 Players
+                      </MenuItem>
+                      <MenuItem className={styles.menuItem} onClick={closeFour}>
+                        4 Players
+                      </MenuItem>
+                      <MenuItem className={styles.menuItem} onClick={closeFive}>
+                        5 Players
+                      </MenuItem>
                     </Menu>
                   </div>
+                </>
+              )}
+              {renderPlayersInput == "true" && (
+                <>
+                  <h1>hello</h1>
                 </>
               )}
               {/* need to conditonally render the player names now */}

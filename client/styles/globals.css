@@ -11,3 +11,7 @@
 span {
   font-family: "Copperplate" !important;
 }
+ul {
+  margin: auto;
+  background-color: rgb(114, 149, 136) !important;
+}

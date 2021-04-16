@@ -74,3 +74,15 @@
   color: rgb(255, 132, 94) !important;
   background-color: rgb(179, 215, 206) !important;
 }
+.menuItem {
+  font-family: "Garamond" !important;
+  font-style: italic;
+  font-weight: 300;
+  color: rgb(255, 132, 94) !important;
+  background-color: rgb(179, 215, 206) !important;
+}
+.menu {
+  display: flex !important;
+  justify-content: center !important;
+  margin: auto !important;
+}
