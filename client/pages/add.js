@@ -7,7 +7,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 
 export default function Add() {
   const [course, setCourse] = useState("");
-  const [players, setPlayers] = useState("");
+  const [players, setPlayers] = useState();
   let playerNames = [];
 
   const [renderCourse, setRenderCourse] = useState("true");
@@ -16,11 +16,7 @@ export default function Add() {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
 
-  const handleClickCourses = event => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClickPlayers = event => {
+  const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
 
@@ -39,31 +35,31 @@ export default function Add() {
   };
 
   const closeOne = () => {
-    setPlayers("1");
+    setPlayers(1);
     setRenderPlayers("false");
     setRenderPlayersInput("true");
     handleClose();
   };
   const closeTwo = () => {
-    setPlayers("2");
+    setPlayers(2);
     setRenderPlayers("false");
     setRenderPlayersInput("true");
     handleClose();
   };
   const closeThree = () => {
-    setPlayers("3");
+    setPlayers(3);
     setRenderPlayers("false");
     setRenderPlayersInput("true");
     handleClose();
   };
   const closeFour = () => {
-    setPlayers("4");
+    setPlayers(3);
     setRenderPlayers("false");
     setRenderPlayersInput("true");
     handleClose();
   };
   const closeFive = () => {
-    setPlayers("5");
+    setPlayers(5);
     setRenderPlayers("false");
     setRenderPlayersInput("true");
     handleClose();
@@ -105,7 +101,7 @@ export default function Add() {
                       className={styles.courseDropdown}
                       aria-controls="simple-menu"
                       aria-haspopup="true"
-                      onClick={handleClickCourses}
+                      onClick={handleClick}
                     >
                       Choose A Course
                     </Button>
@@ -141,7 +137,7 @@ export default function Add() {
                       className={styles.playerDropdown}
                       aria-controls="simple-menu"
                       aria-haspopup="true"
-                      onClick={handleClickPlayers}
+                      onClick={handleClick}
                     >
                       Choose Player Count
                     </Button>
@@ -176,10 +172,37 @@ export default function Add() {
               )}
               {renderPlayersInput == "true" && (
                 <>
-                  <h1>hello</h1>
+                  <h3 className={styles.playerInputHeader}>
+                    WHAT ARE THE PLAYERS NAMES
+                  </h3>
+                  {/* essentially rendering the correct amount of inputs based on your player count */}
+                  {players == 1 && (
+                    <>
+                      <h1>1</h1>
+                    </>
+                  )}
+                  {players == 2 && (
+                    <>
+                      <h1>2</h1>
+                    </>
+                  )}
+                  {players == 3 && (
+                    <>
+                      <h1>3</h1>
+                    </>
+                  )}
+                  {players == 4 && (
+                    <>
+                      <h1>4</h1>
+                    </>
+                  )}
+                  {players == 5 && (
+                    <>
+                      <h1>5</h1>
+                    </>
+                  )}
                 </>
               )}
-              {/* need to conditonally render the player names now */}
             </div>
           </div>
         </div>
@@ -193,13 +216,6 @@ export default function Add() {
           />
         </div>
       )}
-      {/* <div className={styles.buttonContainer}>
-        <ButtonNav
-          routePrevious="/"
-          routeNext="/rules"
-          text="Course Descriptions"
-        />
-      </div> */}
     </>
   );
 }

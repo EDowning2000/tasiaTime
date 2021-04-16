@@ -86,3 +86,10 @@
   justify-content: center !important;
   margin: auto !important;
 }
+.playerInputHeader {
+  margin-top: 2.5rem;
+  text-align: center;
+  color: rgb(255, 132, 94);
+  font-family: "Copperplate";
+  font-weight: 400;
+}
