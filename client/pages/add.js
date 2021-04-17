@@ -4,6 +4,7 @@ import ButtonNav from "../Components/button";
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
+import Input from "../Components/input";
 
 export default function Add() {
   const [course, setCourse] = useState("");
@@ -178,27 +179,37 @@ export default function Add() {
                   {/* essentially rendering the correct amount of inputs based on your player count */}
                   {players == 1 && (
                     <>
-                      <h1>1</h1>
+                      <Input playerNumber="One" />
                     </>
                   )}
                   {players == 2 && (
                     <>
-                      <h1>2</h1>
+                      <Input playerNumber="One" />
+                      <Input playerNumber="Two" />
                     </>
                   )}
                   {players == 3 && (
                     <>
-                      <h1>3</h1>
+                      <Input playerNumber="One" />
+                      <Input playerNumber="Two" />
+                      <Input playerNumber="Three" />
                     </>
                   )}
                   {players == 4 && (
                     <>
-                      <h1>4</h1>
+                      <Input playerNumber="One" />
+                      <Input playerNumber="Two" />
+                      <Input playerNumber="Three" />
+                      <Input playerNumber="Four" />
                     </>
                   )}
                   {players == 5 && (
                     <>
-                      <h1>5</h1>
+                      <Input playerNumber="One" />
+                      <Input playerNumber="Two" />
+                      <Input playerNumber="Three" />
+                      <Input playerNumber="Four" />
+                      <Input playerNumber="Five" />
                     </>
                   )}
                 </>
