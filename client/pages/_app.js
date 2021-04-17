@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import Head from "next/head";
-import Button from "../Components/button";
+import Input from "../Components/input";
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -8,7 +9,8 @@ function MyApp({ Component, pageProps }) {
         <title>Fantasia Gardens Mini Golf</title>
         <meta charSet="utf-8" />
       </Head>
-      <Component {...pageProps} />
+      {/* <Component {...pageProps} /> */}
+      <Input />
     </>
   );
 }
