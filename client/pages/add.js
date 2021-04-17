@@ -54,7 +54,7 @@ export default function Add() {
     handleClose();
   };
   const closeFour = () => {
-    setPlayers(3);
+    setPlayers(4);
     setRenderPlayers("false");
     setRenderPlayersInput("true");
     handleClose();
@@ -221,8 +221,8 @@ export default function Add() {
       {renderPlayersInput == "true" && (
         <div className={styles.buttonContainer}>
           <ButtonNav
-            routePrevious="/"
-            routeNext="/rules"
+            routePrevious="/rules"
+            routeNext="/hole"
             text="Course Descriptions"
           />
         </div>
