@@ -21,6 +21,7 @@ export default function Add() {
     setAnchorEl(event.currentTarget);
   };
 
+  //these functions help with conditional rendering too
   const closeFairways = () => {
     setCourse("Fairways");
     setRenderCourse("false");
@@ -35,6 +36,7 @@ export default function Add() {
     handleClose();
   };
 
+  //these functions set how many inputs to render and what not to render
   const closeOne = () => {
     setPlayers(1);
     setRenderPlayers("false");
