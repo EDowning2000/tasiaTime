@@ -127,32 +127,25 @@ export const InfoProvider = props => {
 
   return (
     <InfoContext.Provider
-      value={[
-        selectedCourse,
-        setSelectedCourse,
-        playerCount,
-        setPlayerCount,
-        playerOne,
-        setPlayerOne,
-        playerTwo,
-        setPlayerTwo,
-        playerThree,
-        setPlayerThree,
-        playerFour,
-        setPlayerFour,
-        playerFive,
-        setPlayerFive,
-        playerOneScores,
-        playerTwoScores,
-        playerThreeScores,
-        playerFourScores,
-        playerFiveScores,
-        playerOneTotal,
-        playerTwoTotal,
-        playerThreeTotal,
-        playerFourTotal,
-        playerFiveTotal,
-      ]}
+      value={
+        ({ selectedCourse, setSelectedCourse },
+        { playerCount, setPlayerCount },
+        { playerOne, setPlayerOne },
+        { playerTwo, setPlayerTwo },
+        { playerThree, setPlayerThree },
+        { playerFour, setPlayerFour },
+        { playerFive, setPlayerFive },
+        { playerOneScores },
+        { playerTwoScores },
+        { playerThreeScores },
+        { playerFourScores },
+        { playerFiveScores },
+        { playerOneTotal },
+        { playerTwoTotal },
+        { playerThreeTotal },
+        { playerFourTotal },
+        { playerFiveTotal })
+      }
     >
       {props.children}
     </InfoContext.Provider>
