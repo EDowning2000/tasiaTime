@@ -10,13 +10,30 @@ import { InfoContext } from "../Components/InfoContext";
 export default function Add() {
   //getting the global state
   const [
+    selectedCourse,
     setSelectedCourse,
+    playerCount,
     setPlayerCount,
+    playerOne,
     setPlayerOne,
+    playerTwo,
     setPlayerTwo,
+    playerThree,
     setPlayerThree,
+    playerFour,
     setPlayerFour,
+    playerFive,
     setPlayerFive,
+    playerOneScores,
+    playerTwoScores,
+    playerThreeScores,
+    playerFourScores,
+    playerFiveScores,
+    playerOneTotal,
+    playerTwoTotal,
+    playerThreeTotal,
+    playerFourTotal,
+    playerFiveTotal,
   ] = useContext(InfoContext);
 
   const [course, setCourse] = useState("");
@@ -146,6 +163,7 @@ export default function Add() {
               )}{" "}
               {renderPlayers == "true" && (
                 <>
+                  {console.log(selectedCourse)}
                   <h3 className={styles.playerCountHeader}>HOW MANY PLAYERS</h3>
                   <div className={styles.playerDropdownContainer}>
                     <Button
