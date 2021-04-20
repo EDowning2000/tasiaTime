@@ -5,11 +5,19 @@ import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import Input from "../Components/input";
-import { InputContext } from "../Components/InfoContext";
+import { InfoContext } from "../Components/InfoContext";
 
 export default function Add() {
   //getting the global state
-  const value = useContext(InputContext);
+  const [
+    setSelectedCourse,
+    setPlayerCount,
+    setPlayerOne,
+    setPlayerTwo,
+    setPlayerThree,
+    setPlayerFour,
+    setPlayerFive,
+  ] = useContext(InfoContext);
 
   const [course, setCourse] = useState("");
   const [players, setPlayers] = useState();

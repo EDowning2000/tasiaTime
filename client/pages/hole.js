@@ -5,7 +5,7 @@ function hole() {
   const value = useContext(InfoContext);
   return (
     <div>
-      <h1>{value}</h1>
+      <h1>hello world</h1>
     </div>
   );
 }
