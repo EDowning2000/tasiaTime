@@ -9,8 +9,7 @@ import { InfoContext } from "../Components/InfoContext";
 
 export default function Add() {
   //getting the global state
-  const [
-    { selectedCourse, setSelectedCourse },
+  const { setSelectedCourse, selectedCourse } =
     // { playerCount, setPlayerCount },
     // { playerOne, setPlayerOne },
     // { playerTwo, setPlayerTwo },
@@ -27,7 +26,7 @@ export default function Add() {
     // { playerThreeTotal },
     // { playerFourTotal },
     // { playerFiveTotal },
-  ] = useContext(InfoContext);
+    useContext(InfoContext);
 
   const [course, setCourse] = useState("");
   const [players, setPlayers] = useState();
@@ -49,7 +48,7 @@ export default function Add() {
     setRenderCourse("false");
     setRenderPlayers("true");
     handleClose();
-    setSelectedCourse("Fairways");
+    setSelectedCourse("Hello");
     console.log(selectedCourse);
   };
 
