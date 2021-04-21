@@ -1,7 +1,6 @@
 import { useState, useContext } from "react";
 import "../styles/globals.css";
 import Head from "next/head";
-import { InfoContext } from "../Components/InfoContext";
 
 function MyApp({ Component, pageProps }) {
   //the course that the user selects

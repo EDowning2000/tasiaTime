@@ -5,29 +5,8 @@ import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import Input from "../Components/input";
-import { InfoContext } from "../Components/InfoContext";
 
 export default function Add() {
-  //getting the global state
-  const { setSelectedCourse, selectedCourse } =
-    // { playerCount, setPlayerCount },
-    // { playerOne, setPlayerOne },
-    // { playerTwo, setPlayerTwo },
-    // { playerThree, setPlayerThree },
-    // { playerFour, setPlayerFour },
-    // { playerFive, setPlayerFive },
-    // { playerOneScores },
-    // { playerTwoScores },
-    // { playerThreeScores },
-    // { playerFourScores },
-    // { playerFiveScores },
-    // { playerOneTotal },
-    // { playerTwoTotal },
-    // { playerThreeTotal },
-    // { playerFourTotal },
-    // { playerFiveTotal },
-    useContext(InfoContext);
-
   const [course, setCourse] = useState("");
   const [players, setPlayers] = useState();
   let playerNames = [];
@@ -48,8 +27,6 @@ export default function Add() {
     setRenderCourse("false");
     setRenderPlayers("true");
     handleClose();
-    setSelectedCourse("Hello");
-    console.log(selectedCourse);
   };
 
   const closeGardens = () => {
