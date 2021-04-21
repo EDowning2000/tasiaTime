@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import { UserContext } from "../Components/UserContext";
 import styles from "../styles/Add.module.css";
 import ButtonNav from "../Components/button";
 import Button from "@material-ui/core/Button";
@@ -7,6 +8,8 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Input from "../Components/input";
 
 export default function Add() {
+  const msg = useContext(UserContext);
+
   const [course, setCourse] = useState("");
   const [players, setPlayers] = useState();
   let playerNames = [];
@@ -96,6 +99,7 @@ export default function Add() {
             <div className={styles.center2}>
               {renderCourse == "true" && (
                 <>
+                  {msg}
                   <h3 className={styles.coursePickerHeader}>
                     WHICH COURSE ARE YOU PLAYING
                   </h3>

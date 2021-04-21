@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import "../styles/globals.css";
 import Head from "next/head";
+import { UserContext } from "../Components/UserContext";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -9,9 +10,9 @@ function MyApp({ Component, pageProps }) {
         <title>Fantasia Gardens Mini Golf</title>
         <meta charSet="utf-8" />
       </Head>
-      <InfoContext.Provider value={[selectedCourse, setSelectedCourse]}>
+      <UserContext.Provider value="hello from context">
         <Component {...pageProps} />
-      </InfoContext.Provider>
+      </UserContext.Provider>
     </>
   );
 }
