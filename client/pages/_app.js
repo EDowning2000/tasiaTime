@@ -127,14 +127,15 @@ function MyApp({ Component, pageProps }) {
   const playerFourTotal = 0;
   const playerFiveTotal = 0;
   return (
-    <InfoContext.Provider value={{ selectedCourse, setSelectedCourse }}>
+    <>
       <Head>
         <title>Fantasia Gardens Mini Golf</title>
         <meta charSet="utf-8" />
       </Head>
-
-      <Component {...pageProps} />
-    </InfoContext.Provider>
+      <InfoContext.Provider value={[selectedCourse, setSelectedCourse]}>
+        <Component {...pageProps} />
+      </InfoContext.Provider>
+    </>
   );
 }
 
