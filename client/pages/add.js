@@ -8,11 +8,32 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Input from "../Components/input";
 
 export default function Add() {
-  // const { value, setValue, value2, setValue2 } = useContext(GlobalState);
-
-  const [course, setCourse] = useState("");
-  const [players, setPlayers] = useState();
-  let playerNames = [];
+  const {
+    selectedCourse,
+    setSelectedCourse,
+    playerCount,
+    setPlayerCount,
+    playerOne,
+    setPlayerOne,
+    playerTwo,
+    setPlayerTwo,
+    playerThree,
+    setPlayerThree,
+    playerFour,
+    setPlayerFour,
+    playerFive,
+    setPlayerFive,
+    playerOneScores,
+    playerTwoScores,
+    playerThreeScores,
+    playerFourScores,
+    playerFiveScores,
+    playerOneTotal,
+    playerTwoTotal,
+    playerThreeTotal,
+    playerFourTotal,
+    playerFiveTotal,
+  } = useContext(GlobalState);
 
   const [renderCourse, setRenderCourse] = useState("true");
   const [renderPlayers, setRenderPlayers] = useState("false");
@@ -24,16 +45,28 @@ export default function Add() {
     setAnchorEl(event.currentTarget);
   };
 
+  //adding the players to the player array in the global state
+  const addPlayerOneToArray = e => {
+    e.preventDefault();
+  };
+  const addPlayerTwoToArray = () => {};
+
+  const addPlayerThreeToArray = () => {};
+
+  const addPlayerFourToArray = () => {};
+
+  const addPlayerFiveToArray = () => {};
+
   //these functions help with conditional rendering too
   const closeFairways = () => {
-    setCourse("Fairways");
+    setSelectedCourse("Fairways");
     setRenderCourse("false");
     setRenderPlayers("true");
     handleClose();
   };
 
   const closeGardens = () => {
-    setCourse("Gardens");
+    setSelectedCourse("Gardens");
     setRenderCourse("false");
     setRenderPlayers("true");
     handleClose();
@@ -41,31 +74,31 @@ export default function Add() {
 
   //these functions set how many inputs to render and what not to render
   const closeOne = () => {
-    setPlayers(1);
+    setPlayerCount(1);
     setRenderPlayers("false");
     setRenderPlayersInput("true");
     handleClose();
   };
   const closeTwo = () => {
-    setPlayers(2);
+    setPlayerCount(2);
     setRenderPlayers("false");
     setRenderPlayersInput("true");
     handleClose();
   };
   const closeThree = () => {
-    setPlayers(3);
+    setPlayerCount(3);
     setRenderPlayers("false");
     setRenderPlayersInput("true");
     handleClose();
   };
   const closeFour = () => {
-    setPlayers(4);
+    setPlayerCount(4);
     setRenderPlayers("false");
     setRenderPlayersInput("true");
     handleClose();
   };
   const closeFive = () => {
-    setPlayers(5);
+    setPlayerCount(5);
     setRenderPlayers("false");
     setRenderPlayersInput("true");
     handleClose();
@@ -182,25 +215,25 @@ export default function Add() {
                     WHAT ARE THE PLAYERS NAMES
                   </h3>
                   {/* essentially rendering the correct amount of inputs based on your player count */}
-                  {players == 1 && (
+                  {playerCount == 1 && (
                     <>
                       <Input playerNumber="One" />
                     </>
                   )}
-                  {players == 2 && (
+                  {playerCount == 2 && (
                     <>
                       <Input playerNumber="One" />
                       <Input playerNumber="Two" />
                     </>
                   )}
-                  {players == 3 && (
+                  {playerCount == 3 && (
                     <>
                       <Input playerNumber="One" />
                       <Input playerNumber="Two" />
                       <Input playerNumber="Three" />
                     </>
                   )}
-                  {players == 4 && (
+                  {playerCount == 4 && (
                     <>
                       <Input playerNumber="One" />
                       <Input playerNumber="Two" />
@@ -208,7 +241,7 @@ export default function Add() {
                       <Input playerNumber="Four" />
                     </>
                   )}
-                  {players == 5 && (
+                  {playerCount == 5 && (
                     <>
                       <Input playerNumber="One" />
                       <Input playerNumber="Two" />

@@ -1,11 +1,36 @@
 import React, { useState, useContext } from "react";
-import { InfoContext } from "../Components/InfoContext";
+import { GlobalState } from "../Components/GlobalState";
 
 function hole() {
-  const value = useContext(InfoContext);
+  const {
+    selectedCourse,
+    setSelectedCourse,
+    playerCount,
+    setPlayerCount,
+    playerOne,
+    setPlayerOne,
+    playerTwo,
+    setPlayerTwo,
+    playerThree,
+    setPlayerThree,
+    playerFour,
+    setPlayerFour,
+    playerFive,
+    setPlayerFive,
+    playerOneScores,
+    playerTwoScores,
+    playerThreeScores,
+    playerFourScores,
+    playerFiveScores,
+    playerOneTotal,
+    playerTwoTotal,
+    playerThreeTotal,
+    playerFourTotal,
+    playerFiveTotal,
+  } = useContext(GlobalState);
   return (
     <div>
-      <h1>hello world</h1>
+      <h1>{playerOne}</h1>
     </div>
   );
 }
