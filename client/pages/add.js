@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { UserContext } from "../Components/UserContext";
+import { GlobalState } from "../Components/GlobalState";
 import styles from "../styles/Add.module.css";
 import ButtonNav from "../Components/button";
 import Button from "@material-ui/core/Button";
@@ -8,7 +8,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Input from "../Components/input";
 
 export default function Add() {
-  const { value, setValue } = useContext(UserContext);
+  const { value, setValue, value2, setValue2 } = useContext(GlobalState);
 
   const [course, setCourse] = useState("");
   const [players, setPlayers] = useState();
@@ -38,6 +38,7 @@ export default function Add() {
     setRenderPlayers("true");
     handleClose();
     setValue("we did it");
+    setValue2("we did it again");
   };
 
   //these functions set how many inputs to render and what not to render
@@ -101,6 +102,7 @@ export default function Add() {
               {renderCourse == "true" && (
                 <>
                   {value}
+                  {value2}
                   <h3 className={styles.coursePickerHeader}>
                     WHICH COURSE ARE YOU PLAYING
                   </h3>
@@ -140,6 +142,7 @@ export default function Add() {
               {renderPlayers == "true" && (
                 <>
                   {value}
+                  {value2}
                   <h3 className={styles.playerCountHeader}>HOW MANY PLAYERS</h3>
                   <div className={styles.playerDropdownContainer}>
                     <Button
