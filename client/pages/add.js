@@ -39,6 +39,8 @@ export default function Add() {
   const [renderPlayers, setRenderPlayers] = useState("false");
   const [renderPlayersInput, setRenderPlayersInput] = useState("false");
 
+  const [player, setPlayer] = useState("");
+
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = event => {
@@ -217,7 +219,10 @@ export default function Add() {
                   {/* essentially rendering the correct amount of inputs based on your player count */}
                   {playerCount == 1 && (
                     <>
-                      <Input playerNumber="One" />
+                      <Input
+                        playerNumber="One"
+                        playerOnChange={e => setPlayerOne(e.target.value)}
+                      />
                     </>
                   )}
                   {playerCount == 2 && (

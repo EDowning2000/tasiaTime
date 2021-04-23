@@ -30,7 +30,10 @@ function hole() {
   } = useContext(GlobalState);
   return (
     <div>
-      <h1>{playerOne}</h1>
+      <h1>
+        {playerOne}
+        {console.log(playerOne)}
+      </h1>
     </div>
   );
 }
