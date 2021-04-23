@@ -31,8 +31,12 @@ function hole() {
   return (
     <div>
       <h1>
+        {selectedCourse}
         {playerOne}
-        {console.log(playerOne)}
+        {playerTwo}
+        {playerThree}
+        {playerFour}
+        {playerFive}
       </h1>
     </div>
   );

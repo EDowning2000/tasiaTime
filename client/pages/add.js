@@ -227,32 +227,74 @@ export default function Add() {
                   )}
                   {playerCount == 2 && (
                     <>
-                      <Input playerNumber="One" />
-                      <Input playerNumber="Two" />
+                      <Input
+                        playerNumber="One"
+                        playerOnChange={e => setPlayerOne(e.target.value)}
+                      />
+                      <Input
+                        playerNumber="Two"
+                        playerOnChange={e => setPlayerTwo(e.target.value)}
+                      />
                     </>
                   )}
                   {playerCount == 3 && (
                     <>
-                      <Input playerNumber="One" />
-                      <Input playerNumber="Two" />
-                      <Input playerNumber="Three" />
+                      <Input
+                        playerNumber="One"
+                        playerOnChange={e => setPlayerOne(e.target.value)}
+                      />
+                      <Input
+                        playerNumber="Two"
+                        playerOnChange={e => setPlayerTwo(e.target.value)}
+                      />
+                      <Input
+                        playerNumber="Three"
+                        playerOnChange={e => setPlayerThree(e.target.value)}
+                      />
                     </>
                   )}
                   {playerCount == 4 && (
                     <>
-                      <Input playerNumber="One" />
-                      <Input playerNumber="Two" />
-                      <Input playerNumber="Three" />
-                      <Input playerNumber="Four" />
+                      <Input
+                        playerNumber="One"
+                        playerOnChange={e => setPlayerOne(e.target.value)}
+                      />
+                      <Input
+                        playerNumber="Two"
+                        playerOnChange={e => setPlayerTwo(e.target.value)}
+                      />
+                      <Input
+                        playerNumber="Three"
+                        playerOnChange={e => setPlayerThree(e.target.value)}
+                      />
+                      <Input
+                        playerNumber="Four"
+                        playerOnChange={e => setPlayerFour(e.target.value)}
+                      />
                     </>
                   )}
                   {playerCount == 5 && (
                     <>
-                      <Input playerNumber="One" />
-                      <Input playerNumber="Two" />
-                      <Input playerNumber="Three" />
-                      <Input playerNumber="Four" />
-                      <Input playerNumber="Five" />
+                      <Input
+                        playerNumber="One"
+                        playerOnChange={e => setPlayerOne(e.target.value)}
+                      />
+                      <Input
+                        playerNumber="Two"
+                        playerOnChange={e => setPlayerTwo(e.target.value)}
+                      />
+                      <Input
+                        playerNumber="Three"
+                        playerOnChange={e => setPlayerThree(e.target.value)}
+                      />
+                      <Input
+                        playerNumber="Four"
+                        playerOnChange={e => setPlayerFour(e.target.value)}
+                      />
+                      <Input
+                        playerNumber="Five"
+                        playerOnChange={e => setPlayerFive(e.target.value)}
+                      />
                     </>
                   )}
                 </>
