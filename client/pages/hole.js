@@ -3,6 +3,7 @@ import styles from "../styles/Hole.module.css";
 import { GlobalState } from "../Components/GlobalState";
 import Input from "../Components/input";
 import Button from "../Components/button";
+import HoleSelectorButton from "../Components/holeSelectorButton";
 
 function Hole() {
   const {
@@ -23,6 +24,7 @@ function Hole() {
     playerFourTotal,
     playerFiveTotal,
   } = useContext(GlobalState);
+
   let holeNumber = 1;
 
   const holeSelector = () => {
@@ -62,16 +64,20 @@ function Hole() {
       <div className={styles.buttonContainer}>
         {holeNumber < 18 && (
           <>
-            <Button
+            <HoleSelectorButton
               text={"Hole " + holeNumber}
-              routeNext={"/" + selectedCourse}
-              routePrevious="/add"
+              holeSelectorForward={"/" + selectedCourse}
+              holeSelectorBack="/add"
             />
           </>
         )}
         {holeNumber == 18 && (
           <>
-            <Button text="Hole 18" routeNext={"/" + selectedCourse} />
+            <Button
+              text={"Hole " + holeNumber}
+              routePrevious="/add"
+              routeNext={"/" + selectedCourse}
+            />
           </>
         )}
       </div>
