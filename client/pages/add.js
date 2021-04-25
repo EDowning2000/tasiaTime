@@ -9,37 +9,19 @@ import Input from "../Components/input";
 
 export default function Add() {
   const {
-    selectedCourse,
     setSelectedCourse,
     playerCount,
     setPlayerCount,
-    playerOne,
     setPlayerOne,
-    playerTwo,
     setPlayerTwo,
-    playerThree,
     setPlayerThree,
-    playerFour,
     setPlayerFour,
-    playerFive,
     setPlayerFive,
-    playerOneScores,
-    playerTwoScores,
-    playerThreeScores,
-    playerFourScores,
-    playerFiveScores,
-    playerOneTotal,
-    playerTwoTotal,
-    playerThreeTotal,
-    playerFourTotal,
-    playerFiveTotal,
   } = useContext(GlobalState);
 
   const [renderCourse, setRenderCourse] = useState("true");
   const [renderPlayers, setRenderPlayers] = useState("false");
   const [renderPlayersInput, setRenderPlayersInput] = useState("false");
-
-  const [player, setPlayer] = useState("");
 
   const [anchorEl, setAnchorEl] = React.useState(null);
 
