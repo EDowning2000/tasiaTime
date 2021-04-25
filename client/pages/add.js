@@ -47,18 +47,6 @@ export default function Add() {
     setAnchorEl(event.currentTarget);
   };
 
-  //adding the players to the player array in the global state
-  const addPlayerOneToArray = e => {
-    e.preventDefault();
-  };
-  const addPlayerTwoToArray = () => {};
-
-  const addPlayerThreeToArray = () => {};
-
-  const addPlayerFourToArray = () => {};
-
-  const addPlayerFiveToArray = () => {};
-
   //these functions help with conditional rendering too
   const closeFairways = () => {
     setSelectedCourse("Fairways");
