@@ -24,6 +24,13 @@ function Hole() {
     playerFiveTotal,
   } = useContext(GlobalState);
   let holeNumber = 1;
+
+  const holeSelector = () => {
+    if (holeNumber < 18) {
+      holeNumber++;
+    }
+  };
+
   return (
     <>
       <div className={styles.mainContainer}>
@@ -46,17 +53,27 @@ function Hole() {
           <div className={styles.darkGreen}></div>
           <div className={styles.center}>
             <div className={styles.center2}>
-              <h1>{holeNumber}</h1>
+              <h1>Hole Number {holeNumber}</h1>
+              {/* inputs go here */}
             </div>
           </div>
         </div>
       </div>
       <div className={styles.buttonContainer}>
-        <Button
-          text={"Hole" + holeNumber}
-          routeNext="/courses"
-          routePrevious="/add"
-        />
+        {holeNumber < 18 && (
+          <>
+            <Button
+              text={"Hole " + holeNumber}
+              routeNext={"/" + selectedCourse}
+              routePrevious="/add"
+            />
+          </>
+        )}
+        {holeNumber == 18 && (
+          <>
+            <Button text="Hole 18" routeNext={"/" + selectedCourse} />
+          </>
+        )}
       </div>
     </>
   );
