@@ -1,22 +1,16 @@
 import React, { useState, useContext } from "react";
+import styles from "../styles/Hole.module.css";
 import { GlobalState } from "../Components/GlobalState";
+import Input from "../Components/input";
+import Button from "../Components/buton";
 
-function hole() {
+function Hole() {
   const {
-    selectedCourse,
-    setSelectedCourse,
-    playerCount,
-    setPlayerCount,
     playerOne,
-    setPlayerOne,
     playerTwo,
-    setPlayerTwo,
     playerThree,
-    setPlayerThree,
     playerFour,
-    setPlayerFour,
     playerFive,
-    setPlayerFive,
     playerOneScores,
     playerTwoScores,
     playerThreeScores,
@@ -29,17 +23,10 @@ function hole() {
     playerFiveTotal,
   } = useContext(GlobalState);
   return (
-    <div>
-      <h1>
-        {selectedCourse}
-        {playerOne}
-        {playerTwo}
-        {playerThree}
-        {playerFour}
-        {playerFive}
-      </h1>
+    <div className={styles.mainContainer}>
+      <h1></h1>
     </div>
   );
 }
 
-export default hole;
+export default Hole;
