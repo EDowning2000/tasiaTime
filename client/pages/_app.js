@@ -3,7 +3,7 @@ import "../styles/globals.css";
 import Head from "next/head";
 import { GlobalState } from "../Components/GlobalState";
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   //the course that the user selects
   const [selectedCourse, setSelectedCourse] = useState("");
 
@@ -166,5 +166,3 @@ function MyApp({ Component, pageProps }) {
     </>
   );
 }
-
-export default MyApp;
