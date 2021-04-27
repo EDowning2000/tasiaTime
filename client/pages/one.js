@@ -4,7 +4,7 @@ import { GlobalState } from "../Components/GlobalState";
 import Input from "../Components/input";
 import Button from "../Components/button";
 
-function Hole() {
+function One() {
   const {
     selectedCourse,
     playerOne,
@@ -84,4 +84,4 @@ function Hole() {
   );
 }
 
-export default Hole;
+export default One;
