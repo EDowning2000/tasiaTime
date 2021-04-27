@@ -3,7 +3,6 @@ import styles from "../styles/Hole.module.css";
 import { GlobalState } from "../Components/GlobalState";
 import Input from "../Components/input";
 import Button from "../Components/button";
-import HoleSelectorButton from "../Components/holeSelectorButton";
 
 function Hole() {
   const {
