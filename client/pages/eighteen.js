@@ -24,14 +24,6 @@ export default function Eighteen() {
     playerFiveTotal,
   } = useContext(GlobalState);
 
-  let holeNumber = 1;
-
-  const holeSelector = () => {
-    if (holeNumber < 18) {
-      holeNumber++;
-    }
-  };
-
   return (
     <>
       <div className={styles.mainContainer}>

@@ -24,14 +24,6 @@ export default function Five() {
     playerFiveTotal,
   } = useContext(GlobalState);
 
-  let holeNumber = 1;
-
-  const holeSelector = () => {
-    if (holeNumber < 18) {
-      holeNumber++;
-    }
-  };
-
   return (
     <>
       <div className={styles.mainContainer}>
@@ -61,24 +53,7 @@ export default function Five() {
         </div>
       </div>
       <div className={styles.buttonContainer}>
-        {holeNumber < 18 && (
-          <>
-            <HoleSelectorButton
-              text={"Hole " + holeNumber}
-              holeSelectorForward={"/" + selectedCourse}
-              holeSelectorBack="/add"
-            />
-          </>
-        )}
-        {holeNumber == 18 && (
-          <>
-            <Button
-              text={"Hole " + holeNumber}
-              routePrevious="/add"
-              routeNext={"/" + selectedCourse}
-            />
-          </>
-        )}
+        <Button text={"Hole 5"} routePrevious="/four" routeNext="/six" />
       </div>
     </>
   );
