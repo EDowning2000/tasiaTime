@@ -61,24 +61,7 @@ export default function Eleven() {
         </div>
       </div>
       <div className={styles.buttonContainer}>
-        {holeNumber < 18 && (
-          <>
-            <HoleSelectorButton
-              text={"Hole " + holeNumber}
-              holeSelectorForward={"/" + selectedCourse}
-              holeSelectorBack="/add"
-            />
-          </>
-        )}
-        {holeNumber == 18 && (
-          <>
-            <Button
-              text={"Hole " + holeNumber}
-              routePrevious="/add"
-              routeNext={"/" + selectedCourse}
-            />
-          </>
-        )}
+        <Button text={"Hole 11"} routePrevious="/ten" routeNext="/twelve" />
       </div>
     </>
   );

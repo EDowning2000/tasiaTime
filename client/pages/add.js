@@ -277,7 +277,7 @@ export default function Add() {
         <div className={styles.buttonContainer}>
           <ButtonNav
             routePrevious="/rules"
-            routeNext="/hole"
+            routeNext="/one"
             text="Course Descriptions"
           />
         </div>

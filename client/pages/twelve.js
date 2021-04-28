@@ -61,24 +61,11 @@ export default function Twelve() {
         </div>
       </div>
       <div className={styles.buttonContainer}>
-        {holeNumber < 18 && (
-          <>
-            <HoleSelectorButton
-              text={"Hole " + holeNumber}
-              holeSelectorForward={"/" + selectedCourse}
-              holeSelectorBack="/add"
-            />
-          </>
-        )}
-        {holeNumber == 18 && (
-          <>
-            <Button
-              text={"Hole " + holeNumber}
-              routePrevious="/add"
-              routeNext={"/" + selectedCourse}
-            />
-          </>
-        )}
+        <Button
+          text={"Hole 12"}
+          routePrevious="/eleven"
+          routeNext="/thirteen"
+        />
       </div>
     </>
   );

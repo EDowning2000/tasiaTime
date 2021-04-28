@@ -61,24 +61,11 @@ export default function Sixteen() {
         </div>
       </div>
       <div className={styles.buttonContainer}>
-        {holeNumber < 18 && (
-          <>
-            <HoleSelectorButton
-              text={"Hole " + holeNumber}
-              holeSelectorForward={"/" + selectedCourse}
-              holeSelectorBack="/add"
-            />
-          </>
-        )}
-        {holeNumber == 18 && (
-          <>
-            <Button
-              text={"Hole " + holeNumber}
-              routePrevious="/add"
-              routeNext={"/" + selectedCourse}
-            />
-          </>
-        )}
+        <Button
+          text={"Hole 16"}
+          routePrevious="/fifteen"
+          routeNext="/seventeen"
+        />
       </div>
     </>
   );
