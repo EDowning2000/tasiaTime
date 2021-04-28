@@ -46,7 +46,7 @@ export default function Fifteen() {
           <div className={styles.darkGreen}></div>
           <div className={styles.center}>
             <div className={styles.center2}>
-              <h1>Hole Number {holeNumber}</h1>
+              <h1>Hole Number 15</h1>
               {/* inputs go here */}
             </div>
           </div>
