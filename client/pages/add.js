@@ -31,14 +31,14 @@ export default function Add() {
 
   //these functions help with conditional rendering too
   const closeFairways = () => {
-    setSelectedCourse("Fairways");
+    setSelectedCourse("fairways");
     setRenderCourse("false");
     setRenderPlayers("true");
     handleClose();
   };
 
   const closeGardens = () => {
-    setSelectedCourse("Gardens");
+    setSelectedCourse("gardens");
     setRenderCourse("false");
     setRenderPlayers("true");
     handleClose();
