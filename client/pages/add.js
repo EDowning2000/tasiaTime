@@ -190,7 +190,8 @@ export default function Add() {
                   {playerCount == 1 && (
                     <>
                       <Input
-                        playerNumber="One"
+                        inputType="text"
+                        playerNumber="Player One"
                         playerOnChange={e => setPlayerOne(e.target.value)}
                       />
                     </>
@@ -198,11 +199,13 @@ export default function Add() {
                   {playerCount == 2 && (
                     <>
                       <Input
-                        playerNumber="One"
+                        inputType="text"
+                        playerNumber="Player One"
                         playerOnChange={e => setPlayerOne(e.target.value)}
                       />
                       <Input
-                        playerNumber="Two"
+                        inputType="text"
+                        playerNumber="Player Two"
                         playerOnChange={e => setPlayerTwo(e.target.value)}
                       />
                     </>
@@ -210,15 +213,18 @@ export default function Add() {
                   {playerCount == 3 && (
                     <>
                       <Input
-                        playerNumber="One"
+                        inputType="text"
+                        playerNumber="Player One"
                         playerOnChange={e => setPlayerOne(e.target.value)}
                       />
                       <Input
-                        playerNumber="Two"
+                        inputType="text"
+                        playerNumber="Player Two"
                         playerOnChange={e => setPlayerTwo(e.target.value)}
                       />
                       <Input
-                        playerNumber="Three"
+                        inputType="text"
+                        playerNumber="Player Three"
                         playerOnChange={e => setPlayerThree(e.target.value)}
                       />
                     </>
@@ -226,19 +232,23 @@ export default function Add() {
                   {playerCount == 4 && (
                     <>
                       <Input
-                        playerNumber="One"
+                        inputType="text"
+                        playerNumber="Player One"
                         playerOnChange={e => setPlayerOne(e.target.value)}
                       />
                       <Input
-                        playerNumber="Two"
+                        inputType="text"
+                        playerNumber="Player Two"
                         playerOnChange={e => setPlayerTwo(e.target.value)}
                       />
                       <Input
-                        playerNumber="Three"
+                        inputType="text"
+                        playerNumber="Player Three"
                         playerOnChange={e => setPlayerThree(e.target.value)}
                       />
                       <Input
-                        playerNumber="Four"
+                        inputType="text"
+                        playerNumber="Player Four"
                         playerOnChange={e => setPlayerFour(e.target.value)}
                       />
                     </>
@@ -246,23 +256,28 @@ export default function Add() {
                   {playerCount == 5 && (
                     <>
                       <Input
-                        playerNumber="One"
+                        inputType="text"
+                        playerNumber="Player One"
                         playerOnChange={e => setPlayerOne(e.target.value)}
                       />
                       <Input
-                        playerNumber="Two"
+                        inputType="text"
+                        playerNumber="Player Two"
                         playerOnChange={e => setPlayerTwo(e.target.value)}
                       />
                       <Input
-                        playerNumber="Three"
+                        inputType="text"
+                        playerNumber="Player Three"
                         playerOnChange={e => setPlayerThree(e.target.value)}
                       />
                       <Input
-                        playerNumber="Four"
+                        inputType="text"
+                        playerNumber="Player Four"
                         playerOnChange={e => setPlayerFour(e.target.value)}
                       />
                       <Input
-                        playerNumber="Five"
+                        inputType="text"
+                        playerNumber="Player Five"
                         playerOnChange={e => setPlayerFive(e.target.value)}
                       />
                     </>

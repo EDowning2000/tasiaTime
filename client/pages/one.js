@@ -4,17 +4,37 @@ import styles from "../styles/Hole.module.css";
 import Button from "../Components/button";
 import Input from "../Components/input";
 
-export default function Add() {
+export default function One() {
   const {
-    setSelectedCourse,
     playerCount,
-    setPlayerCount,
-    setPlayerOne,
-    setPlayerTwo,
-    setPlayerThree,
-    setPlayerFour,
-    setPlayerFive,
+
+    playerOne,
+
+    playerTwo,
+
+    playerThree,
+
+    playerFour,
+
+    playerFive,
+
+    playerOneScores,
+    playerTwoScores,
+    playerThreeScores,
+    playerFourScores,
+    playerFiveScores,
+    playerOneTotal,
+    playerTwoTotal,
+    playerThreeTotal,
+    playerFourTotal,
+    playerFiveTotal,
   } = useContext(GlobalState);
+
+  const updateOneScore = () => {};
+  const updateTwoScore = () => {};
+  const updateThreeScore = () => {};
+  const updateFourScore = () => {};
+  const updateFiveScore = () => {};
 
   return (
     <>
@@ -43,37 +63,97 @@ export default function Add() {
                 <div className={styles.holeInfoContainer}>
                   {playerCount == 1 && (
                     <>
-                      <Input />
+                      <Input
+                        inputType="number"
+                        playerNumber={playerOne}
+                        playerOnChange={updateOneScore}
+                      />
                     </>
                   )}
                   {playerCount == 2 && (
                     <>
-                      <Input />
-                      <Input />
+                      <Input
+                        inputType="number"
+                        playerNumber={playerOne}
+                        playerOnChange={updateOneScore}
+                      />
+                      <Input
+                        inputType="number"
+                        playerNumber={playerTwo}
+                        playerOnChange={updateTwoScore}
+                      />
                     </>
                   )}
                   {playerCount == 3 && (
                     <>
-                      <Input />
-                      <Input />
-                      <Input />
+                      <Input
+                        inputType="number"
+                        playerNumber={playerOne}
+                        playerOnChange={updateOneScore}
+                      />
+                      <Input
+                        inputType="number"
+                        playerNumber={playerTwo}
+                        playerOnChange={updateTwoScore}
+                      />
+                      <Input
+                        inputType="number"
+                        playerNumber={playerThree}
+                        playerOnChange={updateThreeScore}
+                      />
                     </>
                   )}
                   {playerCount == 4 && (
                     <>
-                      <Input />
-                      <Input />
-                      <Input />
-                      <Input />
+                      <Input
+                        inputType="number"
+                        playerNumber={playerOne}
+                        playerOnChange={updateOneScore}
+                      />
+                      <Input
+                        inputType="number"
+                        playerNumber={playerTwo}
+                        playerOnChange={updateTwoScore}
+                      />
+                      <Input
+                        inputType="number"
+                        playerNumber={playerThree}
+                        playerOnChange={updateThreeScore}
+                      />
+                      <Input
+                        inputType="number"
+                        playerNumber={playerFour}
+                        playerOnChange={updateFourScore}
+                      />
                     </>
                   )}
                   {playerCount == 5 && (
                     <>
-                      <Input />
-                      <Input />
-                      <Input />
-                      <Input />
-                      <Input />
+                      <Input
+                        inputType="number"
+                        playerNumber={playerOne}
+                        playerOnChange={updateOneScore}
+                      />
+                      <Input
+                        inputType="number"
+                        playerNumber={playerTwo}
+                        playerOnChange={updateTwoScore}
+                      />
+                      <Input
+                        inputType="number"
+                        playerNumber={playerThree}
+                        playerOnChange={updateThreeScore}
+                      />
+                      <Input
+                        inputType="number"
+                        playerNumber={playerFour}
+                        playerOnChange={updatePlayerFourScore}
+                      />
+                      <Input
+                        inputType="number"
+                        playerNumber={playerFive}
+                        playerOnChange={updateFiveScore}
+                      />
                     </>
                   )}
                 </div>
@@ -87,44 +167,4 @@ export default function Add() {
       </div>
     </>
   );
-}
-
-{
-  /* <Button text={"Hole 1"} routePrevious="/add" routeNext={"/two"} />
-
-{playerCount == 1 && (
-  <>
-    <Input />
-  </>
-)}
-{playerCount == 2 && (
-  <>
-    <Input />
-    <Input />
-  </>
-)}
-{playerCount == 3 && (
-  <>
-    <Input />
-    <Input />
-    <Input />
-  </>
-)}
-{playerCount == 4 && (
-  <>
-    <Input />
-    <Input />
-    <Input />
-    <Input />
-  </>
-)}
-{playerCount == 5 && (
-  <>
-    <Input />
-    <Input />
-    <Input />
-    <Input />
-    <Input />
-  </>
-)} */
 }
