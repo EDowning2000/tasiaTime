@@ -7,34 +7,34 @@ import Input from "../Components/input";
 export default function One() {
   const {
     playerCount,
-
     playerOne,
-
     playerTwo,
-
     playerThree,
-
     playerFour,
-
     playerFive,
-
     playerOneScores,
     playerTwoScores,
     playerThreeScores,
     playerFourScores,
     playerFiveScores,
-    playerOneTotal,
-    playerTwoTotal,
-    playerThreeTotal,
-    playerFourTotal,
-    playerFiveTotal,
   } = useContext(GlobalState);
 
-  const updateOneScore = () => {};
-  const updateTwoScore = () => {};
-  const updateThreeScore = () => {};
-  const updateFourScore = () => {};
-  const updateFiveScore = () => {};
+  const updateOneScore = e => {
+    playerOneScores[0] = e.target.value;
+    console.log(playerOneScores);
+  };
+  const updateTwoScore = e => {
+    playerTwoScores[0] = e.target.value;
+  };
+  const updateThreeScore = e => {
+    playerThreeScores[0] = e.target.value;
+  };
+  const updateFourScore = e => {
+    playerFourScores[0] = e.target.value;
+  };
+  const updateFiveScore = e => {
+    playerFiveScores[0] = e.target.value;
+  };
 
   return (
     <>
@@ -147,7 +147,7 @@ export default function One() {
                       <Input
                         inputType="number"
                         playerNumber={playerFour}
-                        playerOnChange={updatePlayerFourScore}
+                        playerOnChange={updateFourScore}
                       />
                       <Input
                         inputType="number"

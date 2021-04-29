@@ -121,11 +121,11 @@ export default function MyApp({ Component, pageProps }) {
   ];
 
   //variables to count the player total scores not a state variable cause i dont want this to reset
-  const playerOneTotal = 0;
-  const playerTwoTotal = 0;
-  const playerThreeTotal = 0;
-  const playerFourTotal = 0;
-  const playerFiveTotal = 0;
+  const [playerOneTotal, setPlayerOneTotal] = useState("");
+  const playerTwoTotal = "0";
+  const playerThreeTotal = "0";
+  const playerFourTotal = "0";
+  const playerFiveTotal = "0";
 
   return (
     <>
