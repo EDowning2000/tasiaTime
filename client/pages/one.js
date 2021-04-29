@@ -1,27 +1,19 @@
 import React, { useState, useContext } from "react";
-import styles from "../styles/Hole.module.css";
 import { GlobalState } from "../Components/GlobalState";
-import Input from "../Components/input";
+import styles from "../styles/Hole.module.css";
 import Button from "../Components/button";
+import Input from "../Components/input";
 
-export default function One() {
+export default function Add() {
   const {
-    selectedCourse,
-    playerOne,
-    playerTwo,
-    playerThree,
-    playerFour,
-    playerFive,
-    playerOneScores,
-    playerTwoScores,
-    playerThreeScores,
-    playerFourScores,
-    playerFiveScores,
-    playerOneTotal,
-    playerTwoTotal,
-    playerThreeTotal,
-    playerFourTotal,
-    playerFiveTotal,
+    setSelectedCourse,
+    playerCount,
+    setPlayerCount,
+    setPlayerOne,
+    setPlayerTwo,
+    setPlayerThree,
+    setPlayerFour,
+    setPlayerFive,
   } = useContext(GlobalState);
 
   return (
@@ -46,8 +38,46 @@ export default function One() {
           <div className={styles.darkGreen}></div>
           <div className={styles.center}>
             <div className={styles.center2}>
-              <h1>Hole Number 1</h1>
-              {/* inputs go here */}
+              <>
+                <h1 className={styles.holeHeader}>Hole 1</h1>
+                <div className={styles.holeInfoContainer}>
+                  {playerCount == 1 && (
+                    <>
+                      <Input />
+                    </>
+                  )}
+                  {playerCount == 2 && (
+                    <>
+                      <Input />
+                      <Input />
+                    </>
+                  )}
+                  {playerCount == 3 && (
+                    <>
+                      <Input />
+                      <Input />
+                      <Input />
+                    </>
+                  )}
+                  {playerCount == 4 && (
+                    <>
+                      <Input />
+                      <Input />
+                      <Input />
+                      <Input />
+                    </>
+                  )}
+                  {playerCount == 5 && (
+                    <>
+                      <Input />
+                      <Input />
+                      <Input />
+                      <Input />
+                      <Input />
+                    </>
+                  )}
+                </div>
+              </>
             </div>
           </div>
         </div>
@@ -57,4 +87,44 @@ export default function One() {
       </div>
     </>
   );
+}
+
+{
+  /* <Button text={"Hole 1"} routePrevious="/add" routeNext={"/two"} />
+
+{playerCount == 1 && (
+  <>
+    <Input />
+  </>
+)}
+{playerCount == 2 && (
+  <>
+    <Input />
+    <Input />
+  </>
+)}
+{playerCount == 3 && (
+  <>
+    <Input />
+    <Input />
+    <Input />
+  </>
+)}
+{playerCount == 4 && (
+  <>
+    <Input />
+    <Input />
+    <Input />
+    <Input />
+  </>
+)}
+{playerCount == 5 && (
+  <>
+    <Input />
+    <Input />
+    <Input />
+    <Input />
+    <Input />
+  </>
+)} */
 }
