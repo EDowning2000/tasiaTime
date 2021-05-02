@@ -163,7 +163,7 @@ export default function Two() {
         </div>
       </div>
       <div className={styles.buttonContainer}>
-        <Button text={"Hole 2"} routePrevious="/one" routeNext="/two" />
+        <Button text={"Hole 2"} routePrevious="/one" routeNext="/three" />
       </div>
     </>
   );
