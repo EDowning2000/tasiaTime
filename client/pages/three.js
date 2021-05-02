@@ -59,7 +59,7 @@ export default function Two() {
           <div className={styles.center}>
             <div className={styles.center2}>
               <>
-                <h1 className={styles.holeHeader}>Hole 1</h1>
+                <h1 className={styles.holeHeader}>Hole 3</h1>
                 <div className={styles.holeInfoContainer}>
                   {playerCount == 1 && (
                     <>
