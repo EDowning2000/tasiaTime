@@ -1,3 +1,4 @@
+import React, { useContext } from "react";
 import styles from "../styles/Table.module.css";
 
 export default function Table({
@@ -21,6 +22,21 @@ export default function Table({
   HOLE18,
   TOTAL,
 }) {
+  // end of the props
+
+  const {
+    playerOne,
+    playerTwo,
+    playerThree,
+    playerFour,
+    playerFive,
+    playerOneScores,
+    playerTwoScores,
+    playerThreeScores,
+    playerFourScores,
+    playerFiveScores,
+  } = useContext(GlobalState);
+
   return (
     <>
       <table className={styles.mainTable}>
