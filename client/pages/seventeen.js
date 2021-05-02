@@ -20,20 +20,20 @@ export default function Two() {
   } = useContext(GlobalState);
 
   const updateOneScore = e => {
-    playerOneScores[15] = e.target.value;
+    playerOneScores[16] = e.target.value;
     console.log(playerOneScores);
   };
   const updateTwoScore = e => {
-    playerTwoScores[15] = e.target.value;
+    playerTwoScores[16] = e.target.value;
   };
   const updateThreeScore = e => {
-    playerThreeScores[15] = e.target.value;
+    playerThreeScores[16] = e.target.value;
   };
   const updateFourScore = e => {
-    playerFourScores[15] = e.target.value;
+    playerFourScores[16] = e.target.value;
   };
   const updateFiveScore = e => {
-    playerFiveScores[15] = e.target.value;
+    playerFiveScores[16] = e.target.value;
   };
 
   return (
