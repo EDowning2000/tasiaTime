@@ -1,9 +1,23 @@
+import React, { useContext } from "react";
 import styles from "../styles/Gardens.module.css";
 import golfBall from "../Images/golfBall.png";
 import Table from "../Components/table";
 import HOLES from "../Constants/Holes";
 
 export default function Gardens() {
+  const {
+    playerOne,
+    playerTwo,
+    playerThree,
+    playerFour,
+    playerFive,
+    playerOneScores,
+    playerTwoScores,
+    playerThreeScores,
+    playerFourScores,
+    playerFiveScores,
+  } = useContext(GlobalState);
+
   return (
     <div className={styles.mainContainer}>
       <div className={styles.firstContainer}>
