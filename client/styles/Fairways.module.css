@@ -47,6 +47,8 @@
 }
 .secondContainer {
   width: 90%;
+  height: 75%;
   margin: auto;
   margin-top: -1rem;
+  overflow-y: scroll;
 }
