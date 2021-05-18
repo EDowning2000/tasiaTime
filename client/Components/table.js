@@ -146,7 +146,7 @@ export default function Table({
         <tr className={styles.rowOne}>
           <th className={styles.headerOne}>NAMES</th>
           <td className={styles.dataOne}>{playerOne}</td>
-          <td className={styles.dataOne}>{playreTwo}</td>
+          <td className={styles.dataOne}>{playerTwo}</td>
           <td className={styles.dataOne}>{playerThree}</td>
           <td className={styles.dataOne}>{playerFour}</td>
           <td className={styles.dataOne}>{playerFive}</td>
