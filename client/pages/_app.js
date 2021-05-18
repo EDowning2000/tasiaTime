@@ -19,109 +19,14 @@ export default function MyApp({ Component, pageProps }) {
 
   //gonna use array methods to pop and enque on these to map into the scorecards
   //not state variables cause i dont want them to reset
-  const playerOneScores = [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-  ];
-  const playerTwoScores = [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-  ];
-  const playerThreeScores = [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-  ];
-  const playerFourScores = [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-  ];
-  const playerFiveScores = [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-  ];
+  const [playerOneScores, setPlayerOneScores] = useState([]);
+  const [playerTwoScores, setPlayerTwoScores] = useState([]);
+  const [playerThreeScores, setPlayerThreeScores] = useState([]);
+  const [playerFourScores, setPlayerFourScores] = useState([]);
+  const [playerFiveScores, setPlayerFiveScores] = useState([]);
 
   //variables to count the player total scores not a state variable cause i dont want this to reset
-  const [playerOneTotal, setPlayerOneTotal] = useState("");
+  const playerOneTotal = "0";
   const playerTwoTotal = "0";
   const playerThreeTotal = "0";
   const playerFourTotal = "0";
@@ -149,10 +54,15 @@ export default function MyApp({ Component, pageProps }) {
           setPlayerFour,
           playerFive,
           setPlayerFive,
+          setPlayerOneScores,
           playerOneScores,
+          setPlayerTwoScores,
           playerTwoScores,
+          setPlayerThreeScores,
           playerThreeScores,
+          setPlayerFourScores,
           playerFourScores,
+          setPlayerFiveScores,
           playerFiveScores,
           playerOneTotal,
           playerTwoTotal,

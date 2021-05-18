@@ -13,6 +13,7 @@ export default function Two() {
     playerFour,
     playerFive,
     playerOneScores,
+    setPlayerOneScores,
     playerTwoScores,
     playerThreeScores,
     playerFourScores,
@@ -20,7 +21,7 @@ export default function Two() {
   } = useContext(GlobalState);
 
   const updateOneScore = e => {
-    playerOneScores[1] = e.target.value;
+    setPlayerOneScores(playerOneScores.push(e.target.value));
     console.log(playerOneScores);
   };
   const updateTwoScore = e => {
@@ -38,6 +39,7 @@ export default function Two() {
 
   return (
     <>
+      {console.log(playerOneScores)}
       <div className={styles.mainContainer}>
         <div className={styles.firstContainer}>
           <div className={styles.lightGreen}></div>

@@ -12,28 +12,34 @@ export default function One() {
     playerThree,
     playerFour,
     playerFive,
+    setPlayerOneScores,
     playerOneScores,
+    setPlayerTwoScores,
     playerTwoScores,
+    setPlayerThreeScores,
     playerThreeScores,
+    setPlayerFourScores,
     playerFourScores,
+    setPlayerFiveScores,
     playerFiveScores,
   } = useContext(GlobalState);
 
   const updateOneScore = e => {
-    playerOneScores[0] = e.target.value;
+    // playerOneScores[0] = e.target.value;
+    setPlayerOneScores(playerOneScores.push(e.target.value));
     console.log(playerOneScores);
   };
   const updateTwoScore = e => {
-    playerTwoScores[0] = e.target.value;
+    setPlayerTwoScores(...(playerTwoScores + e.target.value));
   };
   const updateThreeScore = e => {
-    playerThreeScores[0] = e.target.value;
+    setPlayerThreeScores(...(playerThreeScores + e.target.value));
   };
   const updateFourScore = e => {
-    playerFourScores[0] = e.target.value;
+    setPlayerFourScores(...(playerFourScores + e.target.value));
   };
   const updateFiveScore = e => {
-    playerFiveScores[0] = e.target.value;
+    setPlayerFiveScores(...(playerFiveScores + e.target.value));
   };
 
   return (
