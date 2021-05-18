@@ -4,7 +4,7 @@ import styles from "../styles/Hole.module.css";
 import Button from "../Components/button";
 import Input from "../Components/input";
 
-export default function Two() {
+export default function Eleven() {
   const {
     playerCount,
     playerOne,

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { GlobalState } from "../Components/GlobalState";
+import { GlobalState } from "./GlobalState";
 import styles from "../styles/Table.module.css";
 
 export default function Table({
@@ -142,6 +142,7 @@ export default function Table({
 
   return (
     <>
+      {console.log(playerOneScores)}
       <table className={styles.mainTable}>
         <tr className={styles.rowOne}>
           <th className={styles.headerOne}>NAMES</th>
