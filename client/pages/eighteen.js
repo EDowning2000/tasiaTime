@@ -22,7 +22,7 @@ export default function Eighteen() {
 
   const updateOneScore = e => {
     playerOneScores[17] = e.target.value;
-    console.log(playerOneScores);
+    console.log(playerOneScores)
   };
   const updateTwoScore = e => {
     playerTwoScores[17] = e.target.value;

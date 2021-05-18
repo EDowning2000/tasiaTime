@@ -19,7 +19,26 @@ export default function MyApp({ Component, pageProps }) {
 
   //gonna use array methods to pop and enque on these to map into the scorecards
   //not state variables cause i dont want them to reset
-  const playerOneScores = [];
+  const playerOneScores = [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+  ];
   const playerTwoScores = [
     0,
     0,
