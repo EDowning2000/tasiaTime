@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { GlobalState } from "../Components/GlobalState";
 import styles from "../styles/Table.module.css";
 
 export default function Table({

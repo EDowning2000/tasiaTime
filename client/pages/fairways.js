@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { GlobalState } from "../Components/GlobalState";
 import styles from "../styles/Fairways.module.css";
 import golfBall from "../Images/golfBall.png";
 import Table from "../Components/table";
