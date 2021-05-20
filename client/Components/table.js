@@ -39,105 +39,109 @@ export default function Table({
   } = useContext(GlobalState);
   //end of the global state variables
 
-  let playerOneTotal =
+  let playerOneTotal = parseInt(
     playerOneScores[0] +
-    playerOneScores[1] +
-    playerOneScores[2] +
-    playerOneScores[3] +
-    playerOneScores[4] +
-    playerOneScores[5] +
-    playerOneScores[6] +
-    playerOneScores[7] +
-    playerOneScores[8] +
-    playerOneScores[9] +
-    playerOneScores[10] +
-    playerOneScores[11] +
-    playerOneScores[12] +
-    playerOneScores[13] +
-    playerOneScores[14] +
-    playerOneScores[15] +
-    playerOneScores[16] +
-    playerOneScores[17];
-
-  let playerTwoTotal =
+      playerOneScores[1] +
+      playerOneScores[2] +
+      playerOneScores[3] +
+      playerOneScores[4] +
+      playerOneScores[5] +
+      playerOneScores[6] +
+      playerOneScores[7] +
+      playerOneScores[8] +
+      playerOneScores[9] +
+      playerOneScores[10] +
+      playerOneScores[11] +
+      playerOneScores[12] +
+      playerOneScores[13] +
+      playerOneScores[14] +
+      playerOneScores[15] +
+      playerOneScores[16] +
+      playerOneScores[17]
+  );
+  let playerTwoTotal = parseInt(
     playerTwoScores[0] +
-    playerTwoScores[1] +
-    playerTwoScores[2] +
-    playerTwoScores[3] +
-    playerTwoScores[4] +
-    playerTwoScores[5] +
-    playerTwoScores[6] +
-    playerTwoScores[7] +
-    playerTwoScores[8] +
-    playerTwoScores[9] +
-    playerTwoScores[10] +
-    playerTwoScores[11] +
-    playerTwoScores[12] +
-    playerTwoScores[13] +
-    playerTwoScores[14] +
-    playerTwoScores[15] +
-    playerTwoScores[16] +
-    playerTwoScores[17];
+      playerTwoScores[1] +
+      playerTwoScores[2] +
+      playerTwoScores[3] +
+      playerTwoScores[4] +
+      playerTwoScores[5] +
+      playerTwoScores[6] +
+      playerTwoScores[7] +
+      playerTwoScores[8] +
+      playerTwoScores[9] +
+      playerTwoScores[10] +
+      playerTwoScores[11] +
+      playerTwoScores[12] +
+      playerTwoScores[13] +
+      playerTwoScores[14] +
+      playerTwoScores[15] +
+      playerTwoScores[16] +
+      playerTwoScores[17]
+  );
 
-  let playerThreeTotal =
+  let playerThreeTotal = parseInt(
     playerThreeScores[0] +
-    playerThreeScores[1] +
-    playerThreeScores[2] +
-    playerThreeScores[3] +
-    playerThreeScores[4] +
-    playerThreeScores[5] +
-    playerThreeScores[6] +
-    playerThreeScores[7] +
-    playerThreeScores[8] +
-    playerThreeScores[9] +
-    playerThreeScores[10] +
-    playerThreeScores[11] +
-    playerThreeScores[12] +
-    playerThreeScores[13] +
-    playerThreeScores[14] +
-    playerThreeScores[15] +
-    playerThreeScores[16] +
-    playerThreeScores[17];
+      playerThreeScores[1] +
+      playerThreeScores[2] +
+      playerThreeScores[3] +
+      playerThreeScores[4] +
+      playerThreeScores[5] +
+      playerThreeScores[6] +
+      playerThreeScores[7] +
+      playerThreeScores[8] +
+      playerThreeScores[9] +
+      playerThreeScores[10] +
+      playerThreeScores[11] +
+      playerThreeScores[12] +
+      playerThreeScores[13] +
+      playerThreeScores[14] +
+      playerThreeScores[15] +
+      playerThreeScores[16] +
+      playerThreeScores[17]
+  );
 
-  let playerFourTotal =
+  let playerFourTotal = parseInt(
     playerFourScores[0] +
-    playerFourScores[1] +
-    playerFourScores[2] +
-    playerFourScores[3] +
-    playerFourScores[4] +
-    playerFourScores[5] +
-    playerFourScores[6] +
-    playerFourScores[7] +
-    playerFourScores[8] +
-    playerFourScores[9] +
-    playerFourScores[10] +
-    playerFourScores[11] +
-    playerFourScores[12] +
-    playerFourScores[13] +
-    playerFourScores[14] +
-    playerFourScores[15] +
-    playerFourScores[16] +
-    playerFourScores[17];
+      playerFourScores[1] +
+      playerFourScores[2] +
+      playerFourScores[3] +
+      playerFourScores[4] +
+      playerFourScores[5] +
+      playerFourScores[6] +
+      playerFourScores[7] +
+      playerFourScores[8] +
+      playerFourScores[9] +
+      playerFourScores[10] +
+      playerFourScores[11] +
+      playerFourScores[12] +
+      playerFourScores[13] +
+      playerFourScores[14] +
+      playerFourScores[15] +
+      playerFourScores[16] +
+      playerFourScores[17]
+  );
 
-  let playerFiveTotal =
+  let playerFiveTotal = parseInt(
     playerFiveScores[0] +
-    playerFiveScores[1] +
-    playerFiveScores[2] +
-    playerFiveScores[3] +
-    playerFiveScores[4] +
-    playerFiveScores[5] +
-    playerFiveScores[6] +
-    playerFiveScores[7] +
-    playerFiveScores[8] +
-    playerFiveScores[9] +
-    playerFiveScores[10] +
-    playerFiveScores[11] +
-    playerFiveScores[12] +
-    playerFiveScores[13] +
-    playerFiveScores[14] +
-    playerFiveScores[15] +
-    playerFiveScores[16] +
-    playerFiveScores[17];
+      playerFiveScores[1] +
+      playerFiveScores[2] +
+      playerFiveScores[3] +
+      playerFiveScores[4] +
+      playerFiveScores[5] +
+      playerFiveScores[6] +
+      playerFiveScores[7] +
+      playerFiveScores[8] +
+      playerFiveScores[9] +
+      playerFiveScores[10] +
+      playerFiveScores[11] +
+      playerFiveScores[12] +
+      playerFiveScores[13] +
+      playerFiveScores[14] +
+      playerFiveScores[15] +
+      playerFiveScores[16] +
+      playerFiveScores[17]
+  );
   //end of the player total scores
 
   return (
@@ -363,11 +367,11 @@ export default function Table({
         <tr>
           <th className={styles.total}>Total</th>
           <th className={styles.totalPar}>{TOTAL}</th>
-          <td className={styles.dataFour}>fill</td>
-          <td className={styles.dataFour}>fill</td>
-          <td className={styles.dataFour}>fill</td>
-          <td className={styles.dataFour}>fill</td>
-          <td className={styles.dataFour}>fill</td>
+          <td className={styles.dataFour}>{playerOneTotal}</td>
+          <td className={styles.dataFour}>{playerTwoTotal}</td>
+          <td className={styles.dataFour}>{playerThreeTotal}</td>
+          <td className={styles.dataFour}>{playerFourTotal}</td>
+          <td className={styles.dataFour}>{playerFiveTotal}</td>
         </tr>
       </table>
     </>
