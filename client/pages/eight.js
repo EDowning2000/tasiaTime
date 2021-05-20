@@ -27,31 +27,31 @@ export default function Eight() {
   const updateOneScore = e => {
     // playerOneScores[0] = e.target.value;
     // setPlayerOneScores(playerOneScores.push(e.target.value));
-    setPlayerOneScores(playerOneScores => [...playerOneScores, e.target.value]);
+    setPlayerOneScores(playerOneScores => [...playerOneScores, parseInt(e.target.value)]);
     console.log(playerOneScores);
   };
   const updateTwoScore = e => {
-    setPlayerTwoScores(playerTwoScores => [...playerTwoScores, e.target.value]);
+    setPlayerTwoScores(playerTwoScores => [...playerTwoScores, parseInt(e.target.value)]);
     console.log(playerTwoScores);
   };
   const updateThreeScore = e => {
     setPlayerThreeScores(playerThreeScores => [
       ...playerThreeScores,
-      e.target.value,
+      parseInt(e.target.value),
     ]);
     console.log(playerThreeScores);
   };
   const updateFourScore = e => {
     setPlayerFourScores(playerFourScores => [
       ...playerFourScores,
-      e.target.value,
+      parseInt(e.target.value),
     ]);
     console.log(playerFourScores);
   };
   const updateFiveScore = e => {
     setPlayerFiveScores(playerFiveScores => [
       ...playerFiveScores,
-      e.target.value,
+      parseInt(e.target.value),
     ]);
     console.log(playerFiveScores);
   };

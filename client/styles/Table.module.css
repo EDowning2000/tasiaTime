@@ -59,8 +59,8 @@
   z-index: 20;
 }
 .dataThree {
-  width: 4.85rem;
-  height: 0.85rem;
+  width: 4.85rem !important;
+  height: 0.85rem !important;
   font-family: "Copperplate";
   font-weight: 200;
   border: 2px solid rgb(5, 89, 5);
