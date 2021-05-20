@@ -22,7 +22,6 @@ export default function Five() {
     playerFourScores,
     setPlayerFiveScores,
     playerFiveScores,
-    playerFiveScores,
   } = useContext(GlobalState);
 
   const updateOneScore = e => {
