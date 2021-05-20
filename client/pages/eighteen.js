@@ -6,6 +6,7 @@ import Input from "../Components/input";
 
 export default function Eighteen() {
   const {
+    selectedCourse,
     playerCount,
     playerOne,
     playerTwo,
