@@ -12,28 +12,48 @@ export default function Seventeen() {
     playerThree,
     playerFour,
     playerFive,
+    setPlayerOneScores,
     playerOneScores,
+    setPlayerTwoScores,
     playerTwoScores,
+    setPlayerThreeScores,
     playerThreeScores,
+    setPlayerFourScores,
     playerFourScores,
+    setPlayerFiveScores,
     playerFiveScores,
   } = useContext(GlobalState);
 
   const updateOneScore = e => {
-    playerOneScores[16] = e.target.value;
+    // playerOneScores[0] = e.target.value;
+    // setPlayerOneScores(playerOneScores.push(e.target.value));
+    setPlayerOneScores(playerOneScores => [...playerOneScores, e.target.value]);
     console.log(playerOneScores);
   };
   const updateTwoScore = e => {
-    playerTwoScores[16] = e.target.value;
+    setPlayerTwoScores(playerTwoScores => [...playerTwoScores, e.target.value]);
+    console.log(playerTwoScores);
   };
   const updateThreeScore = e => {
-    playerThreeScores[16] = e.target.value;
+    setPlayerThreeScores(playerThreeScores => [
+      ...playerThreeScores,
+      e.target.value,
+    ]);
+    console.log(playerThreeScores);
   };
   const updateFourScore = e => {
-    playerFourScores[16] = e.target.value;
+    setPlayerFourScores(playerFourScores => [
+      ...playerFourScores,
+      e.target.value,
+    ]);
+    console.log(playerFourScores);
   };
   const updateFiveScore = e => {
-    playerFiveScores[16] = e.target.value;
+    setPlayerFiveScores(playerFiveScores => [
+      ...playerFiveScores,
+      e.target.value,
+    ]);
+    console.log(playerFiveScores);
   };
 
   return (
