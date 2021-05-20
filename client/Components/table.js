@@ -363,11 +363,11 @@ export default function Table({
         <tr>
           <th className={styles.total}>Total</th>
           <th className={styles.totalPar}>{TOTAL}</th>
-          <td className={styles.dataFour}>{playerOneTotal}</td>
-          <td className={styles.dataFour}>{playerTwoTotal}</td>
-          <td className={styles.dataFour}>{playerThreeTotal}</td>
-          <td className={styles.dataFour}>{playerFourTotal}</td>
-          <td className={styles.dataFour}>{playerFiveTotal}</td>
+          <td className={styles.dataFour}>fill</td>
+          <td className={styles.dataFour}>fill</td>
+          <td className={styles.dataFour}>fill</td>
+          <td className={styles.dataFour}>fill</td>
+          <td className={styles.dataFour}>fill</td>
         </tr>
       </table>
     </>
