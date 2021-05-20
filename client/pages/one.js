@@ -26,20 +26,34 @@ export default function One() {
 
   const updateOneScore = e => {
     // playerOneScores[0] = e.target.value;
-    setPlayerOneScores(playerOneScores.push(e.target.value));
+    // setPlayerOneScores(playerOneScores.push(e.target.value));
+    setPlayerOneScores(playerOneScores => [...playerOneScores, e.target.value]);
     console.log(playerOneScores);
   };
   const updateTwoScore = e => {
-    setPlayerTwoScores(...(playerTwoScores + e.target.value));
+    setPlayerTwoScores(playerTwoScores => [...playerTwoScores, e.target.value]);
+    console.log(playerTwoScores);
   };
   const updateThreeScore = e => {
-    setPlayerThreeScores(...(playerThreeScores + e.target.value));
+    setPlayerThreeScores(playerThreeScores => [
+      ...playerThreeScores,
+      e.target.value,
+    ]);
+    console.log(playerThreeScores);
   };
   const updateFourScore = e => {
-    setPlayerFourScores(...(playerFourScores + e.target.value));
+    setPlayerFourScores(playerFourScores => [
+      ...playerFourScores,
+      e.target.value,
+    ]);
+    console.log(playerFourScores);
   };
   const updateFiveScore = e => {
-    setPlayerFiveScores(...(playerFiveScores + e.target.value));
+    setPlayerFiveScores(playerFiveScores => [
+      ...playerFiveScores,
+      e.target.value,
+    ]);
+    console.log(playerFiveScores);
   };
 
   return (
