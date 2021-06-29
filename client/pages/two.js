@@ -25,8 +25,6 @@ export default function Two() {
   } = useContext(GlobalState);
 
   const updateOneScore = e => {
-    // playerOneScores[0] = e.target.value;
-    // setPlayerOneScores(playerOneScores.push(e.target.value));
     setPlayerOneScores(playerOneScores => [
       ...playerOneScores,
       parseInt(e.target.value),

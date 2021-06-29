@@ -39,3 +39,4 @@ const HOLES = [
   { FAIRWAYS_TOTAL: 72 },
 ];
 export default HOLES;
+//may get rid of this file and consolodate in the actual pages themselves
