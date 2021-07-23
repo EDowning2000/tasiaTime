@@ -85,6 +85,16 @@
     border: 3px solid rgb(255, 132, 94);
     display: flex;
   }
+  .center3 {
+    background-color: rgb(251, 250, 241);
+    height: 59.3vh;
+    width: 21.75rem;
+    margin-left: 0.15rem;
+    margin-top: 0.13rem;
+    border: 3px solid rgb(255, 132, 94);
+    display: flex;
+    flex-direction: column;
+  }
   .mainLogo {
     display: flex;
     margin: auto;
@@ -93,6 +103,19 @@
   }
   .buttonContainer {
     margin-top: -10rem;
-    margin-left: 70px;
+    margin-left: 100px;
+  }
+  .playerOneTotal {
+    margin: auto;
+    font-family: "Copperplate";
+    font-weight: 600;
+    color: rgb(5, 89, 5);
+  }
+  .playerTwoTotal {
+    margin: auto;
+    margin-top: -30px;
+    font-family: "Copperplate";
+    font-weight: 600;
+    color: rgb(5, 89, 5);
   }
 }

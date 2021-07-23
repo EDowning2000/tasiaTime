@@ -60,11 +60,7 @@ export default function Courses() {
         </div>
       </div>
       <div className={styles.buttonContainer}>
-        <Button
-          routePrevious="/"
-          routeNext="/rules"
-          text="Course Descriptions"
-        />
+        <Button routePrevious="/" routeNext="/add" text="Course Descriptions" />
       </div>
     </>
   );
