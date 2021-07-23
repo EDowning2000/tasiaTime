@@ -1,5 +1,5 @@
 import styles from "../styles/Rules.module.css";
-import golfBall from "../images/golfBall.png";
+import golfBall from "../Images/golfBall.png";
 import Button from "../Components/button";
 
 export default function Rules() {
