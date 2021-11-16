@@ -110,8 +110,352 @@ export default function Fairways() {
           <div className={styles.darkGreen}></div>
           <div className={styles.center}>
             <div className={styles.center3}>
-              <h2 className={styles.playerOneTotal}>
-                {playerOne} Shot :{" "}
+              {/* <h2 className={styles.playerOneTotal}> */}
+              {playerCount == 1 && (
+                <h2 className={styles.playerOneTotal}>
+                  {playerOne} Shot: {""}
+                  {playerOneScores[0] +
+                    playerOneScores[1] +
+                    playerOneScores[2] +
+                    playerOneScores[3] +
+                    playerOneScores[4] +
+                    playerOneScores[5] +
+                    playerOneScores[6] +
+                    playerOneScores[7] +
+                    playerOneScores[8] +
+                    playerOneScores[9] +
+                    playerOneScores[10] +
+                    playerOneScores[11] +
+                    playerOneScores[12] +
+                    playerOneScores[13] +
+                    playerOneScores[14] +
+                    playerOneScores[15] +
+                    playerOneScores[16] +
+                    playerOneScores[17]}
+                </h2>
+              )}
+              {playerCount == 2 && (
+                <>
+                  <h2 className={styles.playerOneTotal}>
+                    {playerOne} Shot: {""}
+                    {playerOneScores[0] +
+                      playerOneScores[1] +
+                      playerOneScores[2] +
+                      playerOneScores[3] +
+                      playerOneScores[4] +
+                      playerOneScores[5] +
+                      playerOneScores[6] +
+                      playerOneScores[7] +
+                      playerOneScores[8] +
+                      playerOneScores[9] +
+                      playerOneScores[10] +
+                      playerOneScores[11] +
+                      playerOneScores[12] +
+                      playerOneScores[13] +
+                      playerOneScores[14] +
+                      playerOneScores[15] +
+                      playerOneScores[16] +
+                      playerOneScores[17]}
+                  </h2>
+                  <br />
+                  <h2 className={styles.playerTwoTotal}>
+                    {playerTwo} Shot: {""}
+                    {playerTwoScores[0] +
+                      playerTwoScores[1] +
+                      playerTwoScores[2] +
+                      playerTwoScores[3] +
+                      playerTwoScores[4] +
+                      playerTwoScores[5] +
+                      playerTwoScores[6] +
+                      playerTwoScores[7] +
+                      playerTwoScores[8] +
+                      playerTwoScores[9] +
+                      playerTwoScores[10] +
+                      playerTwoScores[11] +
+                      playerTwoScores[12] +
+                      playerTwoScores[13] +
+                      playerTwoScores[14] +
+                      playerTwoScores[15] +
+                      playerTwoScores[16] +
+                      playerTwoScores[17]}
+                  </h2>
+                </>
+              )}
+              {playerCount == 3 && (
+                <>
+                  <h2 className={styles.playerOneTotal}>
+                    {playerOne} Shot: {""}
+                    {playerOneScores[0] +
+                      playerOneScores[1] +
+                      playerOneScores[2] +
+                      playerOneScores[3] +
+                      playerOneScores[4] +
+                      playerOneScores[5] +
+                      playerOneScores[6] +
+                      playerOneScores[7] +
+                      playerOneScores[8] +
+                      playerOneScores[9] +
+                      playerOneScores[10] +
+                      playerOneScores[11] +
+                      playerOneScores[12] +
+                      playerOneScores[13] +
+                      playerOneScores[14] +
+                      playerOneScores[15] +
+                      playerOneScores[16] +
+                      playerOneScores[17]}
+                  </h2>
+                  <br />
+                  <h2 className={styles.playerTwoTotal}>
+                    {playerTwo} Shot: {""}
+                    {playerTwoScores[0] +
+                      playerTwoScores[1] +
+                      playerTwoScores[2] +
+                      playerTwoScores[3] +
+                      playerTwoScores[4] +
+                      playerTwoScores[5] +
+                      playerTwoScores[6] +
+                      playerTwoScores[7] +
+                      playerTwoScores[8] +
+                      playerTwoScores[9] +
+                      playerTwoScores[10] +
+                      playerTwoScores[11] +
+                      playerTwoScores[12] +
+                      playerTwoScores[13] +
+                      playerTwoScores[14] +
+                      playerTwoScores[15] +
+                      playerTwoScores[16] +
+                      playerTwoScores[17]}
+                  </h2>
+                  <br />
+                  <h2 className={styles.playerThreeTotal}>
+                    {playerThree} Shot: {""}
+                    {playerThreeScores[0] +
+                      playerThreeScores[1] +
+                      playerThreeScores[2] +
+                      playerThreeScores[3] +
+                      playerThreeScores[4] +
+                      playerThreeScores[5] +
+                      playerThreeScores[6] +
+                      playerThreeScores[7] +
+                      playerThreeScores[8] +
+                      playerThreeScores[9] +
+                      playerThreeScores[10] +
+                      playerThreeScores[11] +
+                      playerThreeScores[12] +
+                      playerThreeScores[13] +
+                      playerThreeScores[14] +
+                      playerThreeScores[15] +
+                      playerThreeScores[16] +
+                      playerThreeScores[17]}
+                  </h2>
+                </>
+              )}
+              {playerCount == 4 && (
+                <>
+                  <h2 className={styles.playerOneTotal}>
+                    {playerOne} Shot: {""}
+                    {playerOneScores[0] +
+                      playerOneScores[1] +
+                      playerOneScores[2] +
+                      playerOneScores[3] +
+                      playerOneScores[4] +
+                      playerOneScores[5] +
+                      playerOneScores[6] +
+                      playerOneScores[7] +
+                      playerOneScores[8] +
+                      playerOneScores[9] +
+                      playerOneScores[10] +
+                      playerOneScores[11] +
+                      playerOneScores[12] +
+                      playerOneScores[13] +
+                      playerOneScores[14] +
+                      playerOneScores[15] +
+                      playerOneScores[16] +
+                      playerOneScores[17]}
+                  </h2>
+                  <br />
+                  <h2 className={styles.playerTwoTotal}>
+                    {playerTwo} Shot: {""}
+                    {playerTwoScores[0] +
+                      playerTwoScores[1] +
+                      playerTwoScores[2] +
+                      playerTwoScores[3] +
+                      playerTwoScores[4] +
+                      playerTwoScores[5] +
+                      playerTwoScores[6] +
+                      playerTwoScores[7] +
+                      playerTwoScores[8] +
+                      playerTwoScores[9] +
+                      playerTwoScores[10] +
+                      playerTwoScores[11] +
+                      playerTwoScores[12] +
+                      playerTwoScores[13] +
+                      playerTwoScores[14] +
+                      playerTwoScores[15] +
+                      playerTwoScores[16] +
+                      playerTwoScores[17]}
+                  </h2>
+                  <br />
+                  <h2 className={styles.playerThreeTotal}>
+                    {playerThree} Shot: {""}
+                    {playerThreeScores[0] +
+                      playerThreeScores[1] +
+                      playerThreeScores[2] +
+                      playerThreeScores[3] +
+                      playerThreeScores[4] +
+                      playerThreeScores[5] +
+                      playerThreeScores[6] +
+                      playerThreeScores[7] +
+                      playerThreeScores[8] +
+                      playerThreeScores[9] +
+                      playerThreeScores[10] +
+                      playerThreeScores[11] +
+                      playerThreeScores[12] +
+                      playerThreeScores[13] +
+                      playerThreeScores[14] +
+                      playerThreeScores[15] +
+                      playerThreeScores[16] +
+                      playerThreeScores[17]}
+                  </h2>
+                  <br />
+                  <h2 className={styles.playerFourTotal}>
+                    {playerFour} Shot: {""}
+                    {playerFourScores[0] +
+                      playerFourScores[1] +
+                      playerFourScores[2] +
+                      playerFourScores[3] +
+                      playerFourScores[4] +
+                      playerFourScores[5] +
+                      playerFourScores[6] +
+                      playerFourScores[7] +
+                      playerFourScores[8] +
+                      playerFourScores[9] +
+                      playerFourScores[10] +
+                      playerFourScores[11] +
+                      playerFourScores[12] +
+                      playerFourScores[13] +
+                      playerFourScores[14] +
+                      playerFourScores[15] +
+                      playerFourScores[16] +
+                      playerFourScores[17]}
+                  </h2>
+                </>
+              )}
+              {playerCount == 5 && (
+                <>
+                  <h2 className={styles.playerOneTotal}>
+                    {playerOne} Shot: {""}
+                    {playerOneScores[0] +
+                      playerOneScores[1] +
+                      playerOneScores[2] +
+                      playerOneScores[3] +
+                      playerOneScores[4] +
+                      playerOneScores[5] +
+                      playerOneScores[6] +
+                      playerOneScores[7] +
+                      playerOneScores[8] +
+                      playerOneScores[9] +
+                      playerOneScores[10] +
+                      playerOneScores[11] +
+                      playerOneScores[12] +
+                      playerOneScores[13] +
+                      playerOneScores[14] +
+                      playerOneScores[15] +
+                      playerOneScores[16] +
+                      playerOneScores[17]}
+                  </h2>
+                  <br />
+                  <h2 className={styles.playerTwoTotal}>
+                    {playerTwo} Shot: {""}
+                    {playerTwoScores[0] +
+                      playerTwoScores[1] +
+                      playerTwoScores[2] +
+                      playerTwoScores[3] +
+                      playerTwoScores[4] +
+                      playerTwoScores[5] +
+                      playerTwoScores[6] +
+                      playerTwoScores[7] +
+                      playerTwoScores[8] +
+                      playerTwoScores[9] +
+                      playerTwoScores[10] +
+                      playerTwoScores[11] +
+                      playerTwoScores[12] +
+                      playerTwoScores[13] +
+                      playerTwoScores[14] +
+                      playerTwoScores[15] +
+                      playerTwoScores[16] +
+                      playerTwoScores[17]}
+                  </h2>
+                  <br />
+                  <h2 className={styles.playerThreeTotal}>
+                    {playerThree} Shot: {""}
+                    {playerThreeScores[0] +
+                      playerThreeScores[1] +
+                      playerThreeScores[2] +
+                      playerThreeScores[3] +
+                      playerThreeScores[4] +
+                      playerThreeScores[5] +
+                      playerThreeScores[6] +
+                      playerThreeScores[7] +
+                      playerThreeScores[8] +
+                      playerThreeScores[9] +
+                      playerThreeScores[10] +
+                      playerThreeScores[11] +
+                      playerThreeScores[12] +
+                      playerThreeScores[13] +
+                      playerThreeScores[14] +
+                      playerThreeScores[15] +
+                      playerThreeScores[16] +
+                      playerThreeScores[17]}
+                  </h2>
+                  <br />
+                  <h2 className={styles.playerFourTotal}>
+                    {playerFour} Shot: {""}
+                    {playerFourScores[0] +
+                      playerFourScores[1] +
+                      playerFourScores[2] +
+                      playerFourScores[3] +
+                      playerFourScores[4] +
+                      playerFourScores[5] +
+                      playerFourScores[6] +
+                      playerFourScores[7] +
+                      playerFourScores[8] +
+                      playerFourScores[9] +
+                      playerFourScores[10] +
+                      playerFourScores[11] +
+                      playerFourScores[12] +
+                      playerFourScores[13] +
+                      playerFourScores[14] +
+                      playerFourScores[15] +
+                      playerFourScores[16] +
+                      playerFourScores[17]}
+                  </h2>
+                  <br />
+                  <h2 className={styles.playerFiveTotal}>
+                    {playerFive} Shot: {""}
+                    {playerFiveScores[0] +
+                      playerFiveScores[1] +
+                      playerFiveScores[2] +
+                      playerFiveScores[3] +
+                      playerFiveScores[4] +
+                      playerFiveScores[5] +
+                      playerFiveScores[6] +
+                      playerFiveScores[7] +
+                      playerFiveScores[8] +
+                      playerFiveScores[9] +
+                      playerFiveScores[10] +
+                      playerFiveScores[11] +
+                      playerFiveScores[12] +
+                      playerFiveScores[13] +
+                      playerFiveScores[14] +
+                      playerFiveScores[15] +
+                      playerFiveScores[16] +
+                      playerFiveScores[17]}
+                  </h2>
+                </>
+              )}
+
+              {/* {playerOne} Shot :{" "}
                 {playerOneScores[0] +
                   playerOneScores[1] +
                   playerOneScores[2] +
@@ -130,9 +474,9 @@ export default function Fairways() {
                   playerOneScores[15] +
                   playerOneScores[16] +
                   playerOneScores[17]}
-              </h2>
-              <br />
-              <h2 className={styles.playerTwoTotal}>
+              </h2> */}
+              {/* <br /> */}
+              {/* <h2 className={styles.playerTwoTotal}>
                 {playerTwo} Shot :{" "}
                 {playerTwoScores[0] +
                   playerTwoScores[1] +
@@ -152,7 +496,7 @@ export default function Fairways() {
                   playerTwoScores[15] +
                   playerTwoScores[16] +
                   playerTwoScores[17]}
-              </h2>
+              </h2> */}
             </div>
           </div>
         </div>
